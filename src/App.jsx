@@ -9,7 +9,7 @@ import TikTokShop from "./pages/TiktokShop";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import ScrollToTop from "./components/ScrollToTop"; // ✅
+import ScrollToTop from "./components/Scrolltotop"; // ✅ matches file name
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

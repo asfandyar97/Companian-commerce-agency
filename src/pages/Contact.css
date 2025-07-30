@@ -1,0 +1,186 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.contact-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+/* Animate panels on load */
+.left-panel,
+.right-panel {
+  opacity: 0;
+  transform: translateX(0);
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+/* Image panel - slide from left */
+.left-panel {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  animation-name: slideInLeft;
+}
+
+/* Right form panel - slide from right */
+.right-panel {
+  flex: 1;
+  background-color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  animation-name: slideInRight;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Image Styling */
+.left-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Right Panel Content */
+.right-panel h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.right-panel p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #e68900;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #e29d43;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #e07f00;
+  transform: scale(1.03);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel {
+    width: 100%;
+    height: 250px;
+    animation-name: slideInTop;
+  }
+
+  @keyframes slideInTop {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .right-panel {
+    width: 100%;
+    padding: 30px 20px;
+    animation-name: slideInBottom;
+  }
+
+  @keyframes slideInBottom {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}

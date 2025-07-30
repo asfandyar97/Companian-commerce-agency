@@ -1,0 +1,204 @@
+/* == Wrapper/Container == */
+body {
+  overflow-x: hidden; /* ✅ Prevent horizontal scroll globally */
+}
+
+.services-wrapper {
+  background: #f7f8fa;
+  padding: 60px 20px;
+  overflow-x: hidden; /* ✅ Extra protection at section level */
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #1e1e2f;
+}
+
+/* == Service Box == */
+.service-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  scroll-margin-top: 100px;
+  position: relative;
+  gap: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-wrap: wrap; /* ✅ Prevent overflow on small widths */
+  box-sizing: border-box; /* ✅ Ensure internal paddings don’t exceed width */
+}
+
+.service-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* == Image Box == */
+.service-image {
+  flex: 1;
+  text-align: center;
+}
+
+.image-box {
+  background: #fff;
+  padding: 12px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  display: inline-block;
+  transition: transform 0.3s ease;
+  max-width: 100%; /* ✅ Prevent image box overflow */
+  box-sizing: border-box;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.image-box:hover img {
+  transform: scale(1.05);
+}
+
+/* == Tag == */
+.tag {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  background-color: #ff9900;
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* == Step Number Circle == */
+.step-circle {
+  width: 44px;
+  height: 44px;
+  background-color: #0f9d58 !important;
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 44px;
+  margin-bottom: 10px;
+  margin-left: -4px;
+  flex-shrink: 0;
+}
+
+/* == Title with Icon == */
+.icon-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #2c2c3b;
+}
+
+/* == Benefits List == */
+.benefit-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.benefit-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #2c2c3b;
+  font-size: 15px;
+}
+
+.benefit-icon {
+  color: #008f4a;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* == Highlight Box == */
+.highlight-box {
+  background-color: #00793e;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 12px 0;
+  font-size: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.highlight-box:hover {
+  background-color: #00974c;
+  color: #e0ffe5;
+  transform: scale(1.05);
+}
+
+/* == Description Paragraph == */
+.service-text {
+  flex: 1;
+  position: relative;
+}
+
+.service-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* == Responsive Design == */
+@media (max-width: 768px) {
+  .service-section {
+    flex-direction: column;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .service-section.reverse {
+    flex-direction: column;
+  }
+
+  .service-image {
+    margin-top: 20px;
+  }
+
+  .tag {
+    position: static;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  .step-circle {
+    margin: 0 auto 10px;
+  }
+}

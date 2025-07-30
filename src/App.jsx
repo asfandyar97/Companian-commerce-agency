@@ -5,7 +5,7 @@ import './pages/AboutPage.css';
 import Amazon from "./pages/Amazon";
 import Ebay from "./pages/Ebay";
 import Shopify from "./pages/Shopify";
-import TikTokShop from "./pages/TikTokShop";
+import TikTokShop from "./pages/TiktokShop";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";

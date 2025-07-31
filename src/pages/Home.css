@@ -115,6 +115,7 @@
   .overlay-content p {
     font-size: 16px;
     line-height: 1.5;
+    color: white;
   }
 
   .service-boxes {
@@ -587,6 +588,267 @@
 
 /* Counter Section Styles end */
 /* WHY CHOOSE US SECTION end */
+/* === FREE AUDIT SECTION === */
+.free-audit-section {
+  background-color: #f9f9f9;
+  padding: 90px 20px;
+}
+
+.free-audit-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.free-audit-left {
+  flex: 1 1 55%;
+}
+
+.free-audit-left h2 {
+  font-size: 38px;
+  color: #ff9900;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.free-audit-left p {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.free-audit-left ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.free-audit-left ul li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.free-audit-left ul li span {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* === BUTTON WRAPPER === */
+.free-audit-btn-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 68%; /* Pushes button toward the right on large screens */
+  margin-top: 30px;
+}
+
+
+.free-audit-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #ff9900;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 5px 15px rgba(255, 153, 0, 0.3);
+}
+
+.free-audit-btn:hover {
+  background-color: #e38600;
+  transform: translateY(-2px);
+}
+
+/* === IMAGE === */
+.free-audit-right {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.free-audit-right img {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* === RESPONSIVE === */
+/* === FREE AUDIT SECTION === */
+.free-audit-section {
+  background-color: #f9f9f9;
+  padding: 90px 20px;
+}
+
+.free-audit-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.free-audit-left {
+  flex: 1 1 55%;
+}
+
+.free-audit-left h2 {
+  font-size: 38px;
+  color: #fbbf24;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.free-audit-left p {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  text-align: justify; /* clean paragraph lines */
+}
+
+.free-audit-left ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.free-audit-left ul li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.free-audit-left ul li span {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* === BUTTON WRAPPER === */
+.free-audit-btn-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 65%;  /* button aligned to right */
+  margin-top: 30px;
+}
+
+.free-audit-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #ff9900;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 5px 15px rgba(255, 153, 0, 0.3);
+}
+
+.free-audit-btn:hover {
+  background-color: #e38600;
+  transform: translateY(-2px);
+}
+
+/* === IMAGE === */
+.free-audit-right {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.free-audit-right img {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* === RESPONSIVE (MOBILE) === */
+@media (max-width: 768px) {
+  .free-audit-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .free-audit-left,
+  .free-audit-right {
+    flex: 1 1 100%;
+  }
+
+  .free-audit-left h2 {
+    font-size: 30px;
+  }
+
+  .free-audit-left p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .free-audit-left ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto 30px auto;
+    padding: 0;
+  }
+
+  .free-audit-left ul li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    justify-content: flex-start;
+  }
+
+  .free-audit-left ul li span {
+    margin-right: 10px;
+  }
+
+  .free-audit-btn-wrapper {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .free-audit-btn {
+    font-size: 15px;
+    padding: 10px 24px;
+  }
+
+  .free-audit-right img {
+    max-width: 300px;
+    margin-top: 30px;
+  }
+}
+
+
 
 .companioncommerce-testimonials {
   padding: 80px 20px;

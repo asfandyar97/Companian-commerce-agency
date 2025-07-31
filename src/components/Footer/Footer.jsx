@@ -23,7 +23,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/asfandyar-khan-3b843b371/" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/muhammad-adnan-919685289/" target="_blank" rel="noreferrer">
                   <FaLinkedinIn />
                 </a>
               </li>
@@ -55,6 +55,7 @@ const Footer = () => {
             <p className="footer-heading">Quick Links</p>
             <ul>
               <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
               <li><Link to="/amazon">Amazon Services</Link></li>
               <li><Link to="/ebay">Ebay Services</Link></li>
               <li><Link to="/shopify">Shopify Services</Link></li>

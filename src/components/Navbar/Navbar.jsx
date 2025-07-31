@@ -44,7 +44,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink to="/ebay" onClick={closeMenu} className={({ isActive }) => (isActive ? "active" : "")}>
-            eBay
+            EBay
           </NavLink>
         </li>
         <li>

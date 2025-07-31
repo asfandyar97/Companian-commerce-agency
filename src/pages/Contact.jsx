@@ -60,7 +60,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <Helmet>
-        <title>Contact Us | Companion Commerce Agency</title>
+        <title>Contact Us | Companian Commerce Agency</title>
         <meta
           name="description"
           content="Contact Companion Commerce for expert eCommerce services across Amazon, Shopify, eBay, and TikTok Shop."

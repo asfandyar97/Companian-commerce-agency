@@ -71,7 +71,7 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <Helmet>
-        <title>Home | Companion Commerce Agency</title>
+        <title>Home | Companian Commerce Agency</title>
         <meta
           name="description"
           content="Your trusted eCommerce partner for Amazon, Shopify & TikTok Shop growth."
@@ -259,6 +259,36 @@ const Home = () => {
         </div>
       </div>
     </div>
+    
+  <section className="free-audit-section" data-aos="fade-up">
+  <div className="free-audit-container">
+    <div className="free-audit-left">
+      <h2>We Provide Free Audit</h2>
+      <p>
+        Get a detailed analysis of your store, ads, and competitor strategy from our expert team. 
+        We’ll help you identify growth gaps and unlock your brand’s full potential.
+      </p>
+      <ul>
+        <li><span>✔</span> In-depth Store & Ad Review</li>
+        <li><span>✔</span> Competitor Analysis</li>
+        <li><span>✔</span> Actionable Growth Suggestions</li>
+        <li><span>✔</span> Delivered Within 48 Hours</li>
+      </ul>
+      <div className="free-audit-btn-wrapper">
+        <a href="/contact" className="free-audit-btn">Request Free Audit</a>
+      </div>
+    </div>
+    <div className="free-audit-right">
+      <img src="free-audit.png" alt="Free Audit Image" />
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
 
     {/* Features Grid */}
     <div className="features-grid">
@@ -316,7 +346,7 @@ const Home = () => {
           <img src="client1.jpg" alt="Elissa" className="profile-pic" />
           <div className="testimonial-text">
             <p className="quotation">
-              “Companion Commerce scaled us from $0 to $100K/month,fast, reliable, and focused on results.”
+              “Companian Commerce scaled us from $0 to $100K/month,fast, reliable, and focused on results.”
             </p>
             <p className="testimonial-author">
               Elissa A., <span className="client-title">Private Label Seller (UK)</span>
@@ -376,7 +406,7 @@ const Home = () => {
           <img src="cliant4.jpg" alt="ronny" className="profile-pic" />
           <div className="testimonial-text">
             <p className="quotation">
-              “From branding to ads, Companion Commerce helped us build a 6-figure Shopify business.”
+              “From branding to ads, Companian Commerce helped us build a 6-figure Shopify business.”
             </p>
             <p className="testimonial-author">
               ronny B., <span className="client-title">Shopify Lifestyle Brand CEO (UK)</span>

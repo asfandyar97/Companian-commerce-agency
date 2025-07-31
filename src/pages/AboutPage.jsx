@@ -18,10 +18,10 @@ const AboutPage = () => {
         <title>About | Companion Commerce Agency</title>
         <meta
           name="description"
-          content="Discover who we are at Companion Commerce — a team of passionate eCommerce experts driving growth across Amazon, Shopify, TikTok Shop, and eBay."
+          content="Discover who we are at Companian Commerce — a team of passionate eCommerce experts driving growth across Amazon, Shopify, TikTok Shop, and eBay."
         />
-        <meta property="og:title" content="About Companion Commerce" />
-        <meta property="og:description" content="Meet the team and values behind Companion Commerce's success." />
+        <meta property="og:title" content="About Companian Commerce" />
+        <meta property="og:description" content="Meet the team and values behind Companian Commerce's success." />
         <meta property="og:image" content="/og-image.png" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
@@ -45,7 +45,7 @@ const AboutPage = () => {
       {/* WHY US SECTION */}
       <section className="why-us-section">
         <div className="container">
-          <h2 data-aos="fade-up">Why Choose Companion Commerce?</h2>
+          <h2 data-aos="fade-up">Why Choose Companian Commerce?</h2>
           <div className="why-us-content">
             <div className="why-us-left" data-aos="fade-right">
               <img src={WhyUsCircle} alt="Why Us" />
@@ -113,27 +113,6 @@ const AboutPage = () => {
               <h4>Customer Success</h4>
               <p>Your growth is our mission — we’re invested in helping you succeed long term.</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* MEET THE TEAM */}
-      <section className="team-section">
-        <div className="container">
-          <h2 data-aos="fade-up">Meet Our Team</h2>
-          <div className="team-grid">
-            {[
-              { name: 'Muhammed Adnan', role: 'CEO & Founder', img: 't-m-1.png' },
-              { name: 'Imran Khan', role: 'Chairman', img: 't-m-2.png' },
-              { name: 'Asfandyar Khan', role: 'IT Expert', img: 't-m-3.png' },
-              { name: 'Dilawar Khan', role: 'Admin', img: 't-m-4.png' },
-            ].map((member, i) => (
-              <div className="team-card" data-aos="zoom-in" data-aos-delay={i * 100} key={i}>
-                <img src={member.img} alt={member.name} />
-                <h4>{member.name}</h4>
-                <p>{member.role}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

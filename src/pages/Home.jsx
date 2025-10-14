@@ -87,7 +87,7 @@ const Home = () => {
       </Helmet>
       <div className="hero-section">
         <video autoPlay muted loop playsInline className="bg-video">
-          <source src="/night-bridge.mp4" type="video/mp4" />
+          <source src="/night-bridge (3).mp4" type="video/mp4" />
         </video>
 
         <div className="overlay-content" data-aos="fade-right">

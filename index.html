@@ -2,16 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Companion Commerce Agency</title>
+    <title>Companion Commerce Agency | Amazon, eBay, Shopify & TikTok Experts</title>
 
-    <!-- Font Awesome CDN Link Added Here -->
+    <!-- ✅ Favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- ✅ SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Companion Commerce Agency — Your trusted partner for Amazon, eBay, Shopify, and TikTok Shop services. We provide professional eCommerce management, optimization, and growth solutions to help your business succeed."
+    />
+    <meta
+      name="keywords"
+      content="Companion Commerce, eCommerce agency, Amazon services, eBay management, Shopify experts, TikTok Shop solutions, online store growth"
+    />
+    <meta name="author" content="Companion Commerce Agency" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ✅ Organization Schema for Logo -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Companion Commerce Agency",
+        "url": "https://companiancommerce.com",
+        "logo": "https://companiancommerce.com/logoo.png",
+        "sameAs": [
+          "https://www.facebook.com/companiancommerce",
+          "https://www.instagram.com/companiancommerce",
+          "https://www.linkedin.com/company/companiancommerce"
+        ]
+      }
+    </script>
+
+    <!-- ✅ Font Awesome CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <!-- ✅ Google Analytics Script -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXX", { send_page_view: false });
+    </script>
+    <!-- ✅ End Google Analytics Script -->
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

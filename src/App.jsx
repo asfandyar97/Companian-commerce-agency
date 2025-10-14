@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import useAnalytics from "./useAnalytics";
+
 import Home from "./pages/Home";
 import AboutPage from './pages/AboutPage';
 import './pages/AboutPage.css';
@@ -14,6 +16,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
+  useAnalytics(); // ✅ ye line add ki gayi
+
   return (
     <>
       <ScrollToTop /> {/* ✅ Keep this */}

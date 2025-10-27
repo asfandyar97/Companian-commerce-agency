@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async"; // ✅ Add this line
 import useAnalytics from "./useAnalytics";
 
 import Home from "./pages/Home";
-import AboutPage from './pages/AboutPage';
-import './pages/AboutPage.css';
+import AboutPage from "./pages/AboutPage";
+import "./pages/AboutPage.css";
 import Amazon from "./pages/Amazon";
 import Ebay from "./pages/Ebay";
 import Shopify from "./pages/Shopify";
@@ -16,12 +17,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
-  useAnalytics(); // ✅ ye line add ki gayi
+  useAnalytics(); // ✅ Google Analytics tracker
 
   return (
-    <>
-      <ScrollToTop /> {/* ✅ Keep this */}
+    <HelmetProvider> {/* ✅ Wrap entire app */}
+      <ScrollToTop /> {/* ✅ Scroll restore */}
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
@@ -31,8 +33,9 @@ const App = () => {
         <Route path="/tiktokshop" element={<TikTokShop />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
       <Footer />
-    </>
+    </HelmetProvider>
   );
 };
 

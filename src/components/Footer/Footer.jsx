@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="footer-grid">
           {/* Left Side: Logo + Text + Social */}
           <div className="footer-left">
-            <img className="footer-logo" src="/logoo.png" alt="Companion Commerce Logo" />
+            <img className="footer-logo" src="/logo-new.png" alt="Companion Commerce Logo" />
             <p className="footer-text">
               Helping brands grow faster on Amazon, eBay, Shopify, and TiktokShop & more. Your trusted ecommerce partner.
             </p>

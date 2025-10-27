@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isHome ? "home-navbar" : "default-navbar"}`}>
       <div className="logo">
-        <img src="/logoo.png" alt="Logo" />
+        <img src="/logo-new.png" alt="Logo" />
       </div>
 
       <div className="menu-toggle" onClick={toggleMenu}>

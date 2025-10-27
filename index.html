@@ -3,15 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Companion Commerce Agency | Amazon, eBay, Shopify & TikTok Experts</title>
+    <title>
+      Companion Commerce Agency | Amazon, eBay, Shopify & TikTok Experts
+    </title>
 
     <!-- ✅ Favicon -->
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
 
-    <!-- ✅ SEO Meta Tags -->
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- ✅ Canonical & Sitemap -->
+    <link rel="canonical" href="https://companiancommerce.com/" />
+    <link
+      rel="sitemap"
+      type="application/xml"
+      href="https://companiancommerce.com/sitemap.xml"
+    />
+
+    <!-- ✅ Meta Tags -->
     <meta
       name="description"
-      content="Companion Commerce Agency — Your trusted partner for Amazon, eBay, Shopify, and TikTok Shop services. We provide professional eCommerce management, optimization, and growth solutions to help your business succeed."
+      content="Companion Commerce Agency — Your trusted partner for Amazon, eBay, Shopify, and TikTok Shop services. We provide expert eCommerce management, optimization, and growth solutions to help your business succeed."
     />
     <meta
       name="keywords"
@@ -20,7 +34,20 @@
     <meta name="author" content="Companion Commerce Agency" />
     <meta name="robots" content="index, follow" />
 
-    <!-- ✅ Organization Schema for Logo -->
+    <!-- ✅ Open Graph (for social sharing) -->
+    <meta property="og:title" content="Companion Commerce Agency" />
+    <meta
+      property="og:description"
+      content="Grow your brand with professional eCommerce services across Amazon, eBay, Shopify & TikTok Shop."
+    />
+    <meta
+      property="og:image"
+      content="https://companiancommerce.com/logoo.png"
+    />
+    <meta property="og:url" content="https://companiancommerce.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- ✅ Organization Schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -36,26 +63,14 @@
       }
     </script>
 
-    <!-- ✅ Font Awesome CDN -->
+    <!-- ✅ Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
     />
 
-    <!-- ✅ Google Analytics Script -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-XXXXXXX", { send_page_view: false });
-    </script>
-    <!-- ✅ End Google Analytics Script -->
+    <!-- ✅ Google Analytics handled by useAnalytics.js hook -->
   </head>
 
   <body>

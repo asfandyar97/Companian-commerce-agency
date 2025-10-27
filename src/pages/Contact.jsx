@@ -47,6 +47,19 @@ const Contact = () => {
       if (result.success) {
         alert("✅ Thank you for contacting Companion Commerce! Our team will get back to you shortly.");
         setFormData({ name: "", email: "", phone: "", message: "" });
+
+        // ✅ Google Analytics Event Trigger
+        if (window.gtag) {
+          window.gtag("event", "contact_form_submit", {
+            event_category: "Contact Form",
+            event_label: "Form Submitted",
+            value: 1,
+          });
+          console.log("GA Event Sent: contact_form_submit");
+        } else {
+          console.log("gtag not found");
+        }
+
       } else {
         alert("Error: " + (result.message || "Something went wrong."));
       }
@@ -76,7 +89,7 @@ const Contact = () => {
       </Helmet>
 
       <div className="left-panel">
-        <img src="lfs image.png" alt="Contact Office" />
+        <img src="lfs-image.png" alt="Contact Office" />
       </div>
 
       <div className="right-panel">
@@ -100,10 +113,9 @@ const Contact = () => {
             <input
               type="text"
               name="phone"
-              placeholder="Phone Number *"
+              placeholder="Phone Number (Optional)"
               value={formData.phone}
               onChange={handleChange}
-              required
             />
           </div>
 

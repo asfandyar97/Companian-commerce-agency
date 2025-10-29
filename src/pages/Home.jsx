@@ -76,7 +76,7 @@ const Home = () => {
           name="description"
           content="Your trusted eCommerce partner for Amazon, Shopify & TikTok Shop growth."
         />
-        <meta property="og:title" content="Companion Commerce Agency" />
+        <meta property="og:title" content="Companian Commerce Agency" />
         <meta
           property="og:description"
           content="Grow your brand with expert eCommerce services across Amazon, Shopify, eBay, and TikTok Shop."
@@ -101,7 +101,7 @@ const Home = () => {
           </h1>
           <p>
             Looking to accelerate growth for your brand or agency?{" "}
-            <strong>Companion Commerce</strong> offers flexible, contract-free
+            <strong>Companian Commerce</strong> offers flexible, contract-free
             services designed to help you thrive on platforms like Amazon,
             Ebay, Shopify, TikTok Shop. Choose full-service management we're
             here to help you scale faster and smarter.
@@ -150,9 +150,9 @@ const Home = () => {
             <img src="lfs-image.png" alt="Team at Work" />
           </div>
           <div className="about-content" data-aos="fade-left">
-            <h2>About Companion Commerce</h2>
+            <h2>About Companian Commerce</h2>
             <p>
-              At Companion Commerce, we help eCommerce brands launch, grow, and scale across platforms like Amazon, Shopify, TikTok Shop, and eBay. Whether you’re just starting out or managing a growing online store, our expert team provides tailored services from product listings and storefront setup to advertising, SEO, and order management.
+              At Companian Commerce, we help eCommerce brands launch, grow, and scale across platforms like Amazon, Shopify, TikTok Shop, and eBay. Whether you’re just starting out or managing a growing online store, our expert team provides tailored services from product listings and storefront setup to advertising, SEO, and order management.
             </p>
             <p className="about-highlight">
               Your growth is our mission — we don’t just work with sellers, we build lasting success stories.
@@ -284,12 +284,6 @@ const Home = () => {
               </div>
             </section>
 
-
-
-
-
-
-
             {/* Features Grid */}
             <div className="features-grid">
               <div className="feature-box">
@@ -361,7 +355,7 @@ const Home = () => {
                   <img src="cliant2.jpg" alt="katon" className="profile-pic" />
                   <div className="testimonial-text">
                     <p className="quotation">
-                      “Companion Commerce helped us crush it with TikTok ads. We 5x’d our ROAS in just 6 weeks.”
+                      “Companian Commerce helped us crush it with TikTok ads. We 5x’d our ROAS in just 6 weeks.”
                     </p>
                     <p className="testimonial-author">
                       katon R., <span className="client-title">Tiktok Brand Owner (US)</span>

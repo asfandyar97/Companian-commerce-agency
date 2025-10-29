@@ -1,7 +1,15 @@
 import React from "react";
 import "./Footer.css";
-import { FaWhatsapp, FaLinkedinIn, FaTwitter, FaFacebookF } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom"; // 👈 Required for routing
+import {
+  FaWhatsapp,
+  FaLinkedinIn,
+  FaTwitter,
+  FaFacebookF,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+} from "react-icons/fa"; 
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -12,7 +20,7 @@ const Footer = () => {
         <div className="footer-grid">
           {/* Left Side: Logo + Text + Social */}
           <div className="footer-left">
-            <img className="footer-logo" src="/logo-new.png" alt="Companion Commerce Logo" />
+            <img className="footer-logo" src="/logo-new.png" alt="Companian Commerce Logo" />
             <p className="footer-text">
               Helping brands grow faster on Amazon, eBay, Shopify, and TiktokShop & more. Your trusted ecommerce partner.
             </p>
@@ -43,10 +51,23 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="footer-link-block">
             <p className="footer-heading">Contact Us</p>
-            <ul>
-              <li><a href="mailto:Zmarayalkhan@gmail.com">Email: Zmarayalkhan@gmail.com</a></li>
-              <li><a href="tel:+923155513063">Phone: +92 3155513063</a></li>
-              <p>Location: Islamabad, Pakistan</p>
+            <ul className="footer-contact">
+              <li>
+                <FaEnvelope className="footer-icon" />
+                <a
+                  href="mailto:info@companiancommerce.com?subject=Inquiry%20from%20Website&body=Hi%20Companian%20Commerce%20Team,%0D%0A%0D%0AI%20would%20like%20to%20learn%20more%20about%20your%20services."
+                >
+                  info@companiancommerce.com
+                </a>
+              </li>
+              <li>
+                <FaPhoneAlt className="footer-icon" />
+                <a href="tel:+923155513063">+92 3155513063</a>
+              </li>
+              <li>
+                <FaMapMarkerAlt className="footer-icon" />
+                <span>Islamabad, Pakistan</span>
+              </li>
             </ul>
           </div>
 
@@ -64,10 +85,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Replaced Newsletter with CTA */}
+          {/* CTA Section */}
           <div className="footer-cta-block">
             <p className="footer-heading">Have a Project in Mind?</p>
-            <p>Let’s talk and see how Companion Commerce can help your business grow.</p>
+            <p>Let’s talk and see how Companian Commerce can help your business grow.</p>
             <button className="footer-cta-button" onClick={() => navigate("/contact")}>
               Get in Touch
             </button>
@@ -75,7 +96,9 @@ const Footer = () => {
         </div>
 
         <hr className="footer-divider" />
-        <p className="footer-bottom">© {new Date().getFullYear()} Companion Commerce Agency. All rights reserved.</p>
+        <p className="footer-bottom">
+          © {new Date().getFullYear()} Companian Commerce Agency. All rights reserved.
+        </p>
       </div>
     </section>
   );

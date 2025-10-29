@@ -15,7 +15,7 @@ const AboutPage = () => {
   return (
     <div className="about-page">
       <Helmet>
-        <title>About | Companion Commerce Agency</title>
+        <title>About | Companian Commerce Agency</title>
         <meta
           name="description"
           content="Discover who we are at Companian Commerce — a team of passionate eCommerce experts driving growth across Amazon, Shopify, TikTok Shop, and eBay."
@@ -29,7 +29,7 @@ const AboutPage = () => {
 
       {/* HERO SECTION */}
       <section className="about-hero" style={{ backgroundImage: `url(${HeroBg})` }}>
-        <h1 data-aos="zoom-in">About Companion Commerce</h1>
+        <h1 data-aos="zoom-in">About Companian Commerce</h1>
       </section>
 
       {/* INTRO SECTION */}

@@ -1,0 +1,16 @@
+{
+  "name": "Companian Commerce Agency",
+  "short_name": "CompanianCommerce",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "Companian Commerce Agency — Experts in Amazon, eBay, Shopify & TikTok Shop management and growth services.",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

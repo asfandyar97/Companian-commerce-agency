@@ -316,3 +316,21 @@
 .contact-link a {
   transition: all 0.3s ease, transform 0.3s ease;
 }
+@media (max-width: 768px) {
+  /* Home screen me logo ka position fix */
+  .home-navbar .logo {
+    position: relative;
+    top: 0;            /* overlap remove */
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;  /* thoda gap upar se */
+  }
+
+  .home-navbar .logo img {
+    height: 150px;     /* mobile ke liye thoda chhota size */
+    mix-blend-mode: lighten;
+  }
+}
+

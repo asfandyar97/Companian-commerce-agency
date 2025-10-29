@@ -147,7 +147,7 @@ const Home = () => {
       <section className="about-section">
         <div className="about-container">
           <div className="about-image" data-aos="fade-right">
-            <img src="lfs-image.png" alt="Team at Work" />
+            <img src="lfs-image1.png" alt="Team at Work" />
           </div>
           <div className="about-content" data-aos="fade-left">
             <h2>About Companian Commerce</h2>

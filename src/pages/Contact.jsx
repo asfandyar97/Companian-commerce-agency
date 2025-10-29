@@ -89,7 +89,7 @@ const Contact = () => {
       </Helmet>
 
       <div className="left-panel">
-        <img src="lfs-image.png" alt="Contact Office" />
+        <img src="lfs-image1.png" alt="Contact Office" />
       </div>
 
       <div className="right-panel">

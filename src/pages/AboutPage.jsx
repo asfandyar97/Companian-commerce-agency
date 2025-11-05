@@ -15,17 +15,34 @@ const AboutPage = () => {
   return (
     <div className="about-page">
       <Helmet>
-        <title>About | Companian Commerce Agency</title>
+        <title>About Us | Companian Commerce Agency</title>
+
         <meta
           name="description"
-          content="Discover who we are at Companian Commerce — a team of passionate eCommerce experts driving growth across Amazon, Shopify, TikTok Shop, and eBay."
+          content="Learn about Companian Commerce Agency — expert eCommerce team helping brands scale on Amazon, eBay, Shopify, and TikTok Shop through advanced seller services, PPC marketing, and catalog optimization."
         />
-        <meta property="og:title" content="About Companian Commerce" />
-        <meta property="og:description" content="Meet the team and values behind Companian Commerce's success." />
-        <meta property="og:image" content="/og-image.png" />
+
+        <link rel="canonical" href="https://www.companiancommerce.com/about" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="About Companian Commerce Agency" />
+        <meta
+          property="og:description"
+          content="Meet the expert team behind Companian Commerce — dedicated to scaling Amazon, eBay, Shopify & TikTok Shop brands."
+        />
+        <meta property="og:image" content="https://www.companiancommerce.com/og-image.png" />
+        <meta property="og:url" content="https://www.companiancommerce.com/about" />
         <meta property="og:type" content="website" />
+
         <meta name="robots" content="index, follow" />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="Companian Commerce, About Companian Commerce Agency, Amazon management team, eCommerce experts, Shopify specialists, TikTok Shop agency, eBay account management team"
+        />
       </Helmet>
+
 
       {/* HERO SECTION */}
       <section className="about-hero" style={{ backgroundImage: `url(${HeroBg})` }}>

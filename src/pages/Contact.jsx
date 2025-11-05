@@ -74,19 +74,33 @@ const Contact = () => {
     <div className="contact-container">
       <Helmet>
         <title>Contact Us | Companian Commerce Agency</title>
+
         <meta
           name="description"
-          content="Contact Companion Commerce for expert eCommerce services across Amazon, Shopify, eBay, and TikTok Shop."
+          content="Contact Companian Commerce Agency for expert eCommerce services across Amazon, Shopify, eBay, and TikTok Shop. We help brands scale with professional marketplace management and growth strategies."
         />
-        <meta property="og:title" content="Contact Companion Commerce" />
+
+        <link rel="canonical" href="https://www.companiancommerce.com/contact" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Contact Companian Commerce Agency" />
         <meta
           property="og:description"
-          content="Reach out to us for support, inquiries, or partnerships. We’re here to help your eCommerce business grow."
+          content="Get in touch with Companian Commerce Agency for Amazon, eBay, Shopify, and TikTok Shop services, support, and business partnerships."
         />
-        <meta property="og:image" content="/contact-og.jpg" />
+        <meta property="og:image" content="https://www.companiancommerce.com/contact-og.jpg" />
+        <meta property="og:url" content="https://www.companiancommerce.com/contact" />
         <meta property="og:type" content="website" />
+
         <meta name="robots" content="index, follow" />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="Companian Commerce contact, Amazon agency contact, Shopify experts contact, TikTok Shop agency support, eBay seller services contact"
+        />
       </Helmet>
+
 
       <div className="left-panel">
         <img src="lfs-image1.png" alt="Contact Office" />

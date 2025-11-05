@@ -71,20 +71,34 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <Helmet>
-        <title>Home | Companian Commerce Agency</title>
+        <title>Companian Commerce Agency — Amazon, eBay, Shopify & TikTok Experts</title>
+
         <meta
           name="description"
-          content="Your trusted eCommerce partner for Amazon, Shopify & TikTok Shop growth."
+          content="Companian Commerce Agency helps brands grow on Amazon, eBay, Shopify, and TikTok Shop with eCommerce management, FBA support, PPC advertising, and catalog optimization."
         />
+
+        <link rel="canonical" href="https://www.companiancommerce.com/" />
+
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph */}
         <meta property="og:title" content="Companian Commerce Agency" />
         <meta
           property="og:description"
-          content="Grow your brand with expert eCommerce services across Amazon, Shopify, eBay, and TikTok Shop."
+          content="Grow your brand with expert eCommerce services across Amazon, eBay, Shopify & TikTok Shop."
         />
-        <meta property="og:image" content="/og-image.png" />
+        <meta property="og:image" content="https://www.companiancommerce.com/og-image.png" />
+        <meta property="og:url" content="https://www.companiancommerce.com/" />
         <meta property="og:type" content="website" />
-        <meta name="robots" content="index, follow" />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="Companian Commerce, Amazon agency, eBay services, Shopify experts, TikTok Shop management, FBA service, eCommerce marketing, product listing optimization"
+        />
       </Helmet>
+
       <div className="hero-section">
         <video autoPlay muted loop playsInline className="bg-video">
           <source src="/night-bridge-3.mp4" type="video/mp4" />

@@ -93,20 +93,26 @@ const Ebay = () => {
   return (
     <div className="services-wrapper">
       <Helmet>
-        <title>eBay Services | Companion Commerce Agency</title>
+        <title>eBay Services | Companian Commerce Agency</title>
         <meta
           name="description"
-          content="Professional eBay services including store design, SEO, keyword research, advertising, analytics, and more."
+          content="Grow your eBay store with professional eBay listing optimization, branded store setup, SEO, keyword research, advertising campaigns, and analytics support."
         />
-        <meta property="og:title" content="eBay Services | Companion Commerce" />
+        <meta
+          property="og:title"
+          content="eBay Services | Companian Commerce Agency"
+        />
         <meta
           property="og:description"
-          content="Get expert help with eBay listing optimization, branded store setup, keyword targeting, campaigns, and advanced analytics from Companion Commerce."
+          content="Expert eBay management including listing optimization, store design, SEO, PPC ads, keyword targeting, and analytics — scale your eBay business with Companian Commerce Agency."
         />
-        <meta property="og:image" content="/og-image.png" />
+        <meta property="og:image" content="https://companiancommerce.com/og-image.png" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://companiancommerce.com/ebay" />
       </Helmet>
+
 
       <div className="services-container">
         <h2 className="services-title">eBay Services</h2>

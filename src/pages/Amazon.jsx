@@ -102,19 +102,24 @@ const Amazon = () => {
     <div className="services-wrapper">
       {/* ✅ Helmet SEO Block */}
       <Helmet>
-        <title>Amazon Services | Companion Commerce</title>
+        <title>Amazon Services | Companian Commerce Agency</title>
         <meta
           name="description"
-          content="Boost your Amazon sales with expert listing optimization, PPC, FBA shipping, SEO, and account management. Trusted Amazon growth partner."
+          content="Grow your Amazon business with expert listing optimization, PPC campaigns, A+ content, product ranking, FBA support, and complete account management."
         />
-        <meta property="og:title" content="Amazon Services | Companion Commerce" />
+        <meta
+          property="og:title"
+          content="Amazon Services | Companian Commerce Agency"
+        />
         <meta
           property="og:description"
-          content="Comprehensive Amazon services including SEO, PPC, Listing Optimization, and Brand Registry — drive visibility and revenue with Companion Commerce."
+          content="Amazon listing optimization, PPC management, FBA support, product launches, SEO & brand registry services to scale your Amazon store with Companian Commerce."
         />
-        <meta property="og:image" content="/og-image.png" />
+        <meta property="og:image" content="https://companiancommerce.com/og-image.png" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://companiancommerce.com/amazon" />
       </Helmet>
 
       <div className="services-container">

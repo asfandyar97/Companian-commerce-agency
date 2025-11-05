@@ -93,20 +93,21 @@ const TiktokShop = () => {
   return (
     <div className="services-wrapper">
       <Helmet>
-        <title>TikTok Shop Services | Companion Commerce Agency</title>
+        <title>TikTok Shop Services | Companian Commerce Agency</title>
         <meta
           name="description"
-          content="TikTok Shop growth services including listing, SEO, ads, influencer marketing, analytics, and more."
+          content="Grow your TikTok Shop with viral-optimized listings, SEO, TikTok ads, influencer marketing, and order automation."
         />
-        <meta property="og:title" content="TikTok Shop Services | Companion Commerce" />
+        <meta property="og:title" content="TikTok Shop Services | Companian Commerce Agency" />
         <meta
           property="og:description"
-          content="Grow your TikTok Shop with optimized listings, ads, SEO, influencer campaigns, order sync, and full analytics support."
+          content="TikTok Shop listing optimization, influencer campaigns, ads, SEO, analytics, and automated order sync — powered by Companian Commerce."
         />
         <meta property="og:image" content="/og-image.png" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
       </Helmet>
+
 
       <div className="services-container">
         <h2 className="services-title">TikTok Shop Services</h2>

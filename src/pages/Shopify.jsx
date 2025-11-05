@@ -93,20 +93,26 @@ const Shopify = () => {
   return (
     <div className="services-wrapper">
       <Helmet>
-        <title>Shopify Services | Companion Commerce Agency</title>
+        <title>Shopify Services | Companian Commerce Agency</title>
         <meta
           name="description"
-          content="Expert Shopify services including store setup, design, SEO, integrations, apps, marketing, and ongoing support."
+          content="Professional Shopify store creation, customization, SEO, apps setup, payment & shipping integration, and long-term eCommerce growth support."
         />
-        <meta property="og:title" content="Shopify Services | Companion Commerce" />
+        <meta
+          property="og:title"
+          content="Shopify Services | Companian Commerce Agency"
+        />
         <meta
           property="og:description"
-          content="Get expert Shopify help with full store setup, branding, SEO, apps, payment & shipping integration, and 24/7 maintenance support."
+          content="Expert Shopify services including custom store setup, theme design, SEO, app integration, checkout setup, and ongoing growth strategy — manage your store with Companian Commerce Agency."
         />
-        <meta property="og:image" content="/og-image.png" />
+        <meta property="og:image" content="https://companiancommerce.com/og-image.png" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://companiancommerce.com/shopify" />
       </Helmet>
+
 
       <div className="services-container">
         <h2 className="services-title">Shopify Services</h2>

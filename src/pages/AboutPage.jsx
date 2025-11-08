@@ -143,7 +143,7 @@ const AboutPage = () => {
           <h2>Let’s Grow Together</h2>
           <p>
             Ready to take your eCommerce brand to the next level?<br />
-            Let’s build something amazing with Companion Commerce.
+            Let’s build something amazing with Companian Commerce.
           </p>
           <a href="/contact" className="cta-button">Contact Us</a>
         </div>

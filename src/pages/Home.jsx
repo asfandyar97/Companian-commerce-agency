@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -8,9 +8,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Helmet } from "react-helmet";
 
-
 const Home = () => {
   const navigate = useNavigate();
+  const [showModal, setShowModal] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    rating: "",
+    message: "",
+    image: "",
+  });
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
@@ -67,6 +74,25 @@ const Home = () => {
       observer.disconnect();
     };
   }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setShowModal(false);
+    setShowSuccess(true);
+    setTimeout(() => setShowSuccess(false), 3000);
+    setFormData({ name: "", rating: "", message: "", image: "" });
+  };
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setFormData({ ...formData, image: reader.result });
+      };
+      reader.readAsDataURL(file);
+    }
+  };
 
   return (
     <div className="home-wrapper">
@@ -426,6 +452,127 @@ const Home = () => {
             </Slider>
           </div>
         </section>
+        {/* Add Review section */}
+        <section className="add-review-section" id="add-review">
+  <div className="add-review-container">
+    <h2 className="add-review-title">Add Your Review</h2>
+    <p className="add-review-subtitle">We value your feedback — please share your experience below.</p>
+
+    {/* Add Review Button */}
+    <button
+      className="review-open-btn"
+      onClick={() => {
+        document.querySelector(".add-review-form-wrapper").classList.add("show-form");
+      }}
+    >
+      Add Review
+    </button>
+
+    {/* Hidden Form Box */}
+    <div className="add-review-form-wrapper">
+      <div className="form-header">
+        <button
+          className="close-form-btn"
+          onClick={() => {
+            document.querySelector(".add-review-form-wrapper").classList.remove("show-form");
+          }}
+        >
+          &times;
+        </button>
+      </div>
+
+      <form
+        className="add-review-form"
+        onSubmit={(e) => {
+          e.preventDefault();
+          const loader = document.querySelector(".review-loading");
+          const success = document.querySelector(".review-success-message");
+
+          loader.style.display = "block";
+
+          setTimeout(() => {
+            loader.style.display = "none";
+            success.style.display = "block";
+            e.target.reset();
+
+            setTimeout(() => {
+              success.style.display = "none";
+              document.querySelector(".add-review-form-wrapper").classList.remove("show-form");
+            }, 3000);
+          }, 3000);
+        }}
+      >
+        <div className="review-form-group">
+          <label htmlFor="reviewName">Your Name *</label>
+          <input
+            type="text"
+            id="reviewName"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        {/* Star Rating */}
+        <div className="review-form-group">
+          <label>Your Rating *</label>
+          <div className="star-rating">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <span
+                key={star}
+                className="star"
+                onClick={(e) => {
+                  const allStars = e.target.parentElement.querySelectorAll(".star");
+                  allStars.forEach((s, index) => {
+                    s.classList.toggle("active", index < star);
+                  });
+                  e.target.parentElement.setAttribute("data-rating", star);
+                }}
+              >
+                ★
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="review-form-group">
+          <label htmlFor="reviewMessage">Your Review *</label>
+          <textarea
+            id="reviewMessage"
+            name="message"
+            rows="4"
+            placeholder="Write your review..."
+            required
+          ></textarea>
+        </div>
+
+        <div className="review-form-group">
+          <label htmlFor="reviewImage">Upload Image (optional)</label>
+          <input
+            type="file"
+            id="reviewImage"
+            name="image"
+            accept="image/*"
+          />
+        </div>
+
+        <button type="submit" className="review-submit-btn">
+          Submit Review
+        </button>
+
+        {/* Loader + Success */}
+        <div className="review-loading"></div>
+        <p className="review-success-message">
+          Your review successfully added for approval
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+       
+
+        
 
 
 

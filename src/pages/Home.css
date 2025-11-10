@@ -175,7 +175,7 @@
 .about-content h2 {
   font-size: 32px;
   font-weight: 700;
-  color: #ff9900;
+  color: #d4af37;
   margin-bottom: 20px;
 }
 
@@ -194,7 +194,7 @@
 
 .read-more-btn {
   display: inline-block;
-  background-color: #ff9900;
+  background-color: #d4af37;
   color: white;
   padding: 12px 24px;
   border-radius: 30px;
@@ -242,7 +242,7 @@
 }
 
 .small-title {
-  color: #ff9900;
+  color: #d4af37;
   font-size: 20px;
 }
 
@@ -258,7 +258,7 @@
   font-size: 40px;
   font-weight: 800;
   margin-bottom: 24px;
-  color: #ff9900;
+  color: #d4af37;
 }
 
 .amazon-text .description,
@@ -300,7 +300,7 @@
   content: '✔';
   position: absolute;
   left: 0;
-  color: #ff9900;
+  color: #d4af37;
 }
 
 /* === Process Sections === */
@@ -314,7 +314,7 @@
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 10px;
-  color: #000;
+  color: #d4af37;
 }
 
 .section-subtitle {
@@ -372,7 +372,7 @@
 
 .step:hover {
   transform: translateY(-8px);
-  background: #ffe680;
+  background: #d4af37;
   color: #000;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
@@ -460,7 +460,7 @@
 .counter-box .plus-sign {
   font-size: 28px;
   font-weight: bold;
-  color: #ff9900; /* or your theme color */
+  color: #d4af37; /* or your theme color */
   margin-left: 4px;
   vertical-align: top;
 }
@@ -610,7 +610,7 @@
 
 .free-audit-left h2 {
   font-size: 38px;
-  color: #ff9900;
+  color: #d4af37;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -662,7 +662,7 @@
 .free-audit-btn {
   display: inline-block;
   padding: 12px 28px;
-  background-color: #ff9900;
+  background-color: #d4af37;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -673,7 +673,7 @@
 }
 
 .free-audit-btn:hover {
-  background-color: #e38600;
+  background-color: #d4af37;
   transform: translateY(-2px);
 }
 
@@ -713,7 +713,7 @@
 
 .free-audit-left h2 {
   font-size: 38px;
-  color: #fbbf24;
+  color: #d4af37;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -776,7 +776,7 @@
 }
 
 .free-audit-btn:hover {
-  background-color: #e38600;
+  background-color: #d4af37;
   transform: translateY(-2px);
 }
 
@@ -916,7 +916,7 @@
 }
 
 .stars {
-  color: #fbbf24;
+  color: #d4af37;
   font-size: 18px;
   margin-top: 6px;
 }
@@ -1011,7 +1011,7 @@
 .add-review-title {
   font-size: 30px;
   font-weight: 700;
-  color: #ffd700; /* rich gold */
+  color: #d4af37;
   margin-bottom: 10px;
 }
 
@@ -1024,7 +1024,7 @@
 
 /* Open Form Button */
 .review-open-btn {
-  background: linear-gradient(135deg, #ff9900, #ffc700);
+  background: linear-gradient(135deg, #d4af37, #ffc700);
   color: #fff;
   border: none;
   border-radius: 12px;
@@ -1037,7 +1037,7 @@
 }
 .review-open-btn:hover {
   transform: scale(1.08);
-  box-shadow: 0 8px 20px rgba(255, 153, 0, 0.5);
+  box-shadow: 0 8px 20px #d4af37;
 }
 
 /* Hidden form */
@@ -1063,13 +1063,13 @@
   background: none;
   border: none;
   font-size: 28px;
-  color: #ffd700; /* gold */
+  color: #d4af37;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 
 .close-form-btn:hover {
-  color: #ffcc33; /* brighter gold */
+  color: #d4af37; /* brighter gold */
   animation: closeHover 0.6s ease forwards;
 }
 
@@ -1107,7 +1107,7 @@
 }
 .review-form-group input:focus,
 .review-form-group textarea:focus {
-  border-color: #ffc700;
+  border-color: #d4af37;
   box-shadow: 0 0 8px rgba(255, 199, 0, 0.4);
 }
 
@@ -1124,13 +1124,13 @@
 }
 .star.active,
 .star:hover {
-  color: #ffcc33;
+  color: #d4af37;
   text-shadow: 0 0 10px rgba(255, 204, 51, 0.5);
 }
 
 /* Submit button */
 .review-submit-btn {
-  background: linear-gradient(135deg, #ff9900, #ffc700);
+  background: linear-gradient(135deg, #d4af37, #d4af37);
   color: #fff;
   border: none;
   border-radius: 12px;
@@ -1151,7 +1151,7 @@
   display: none;
   margin: 15px auto 0;
   border: 3px solid rgba(255, 255, 255, 0.15);
-  border-top: 3px solid #ffc700;
+  border-top: 3px solid #d4af37;
   border-radius: 50%;
   width: 28px;
   height: 28px;

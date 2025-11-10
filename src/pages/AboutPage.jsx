@@ -71,7 +71,7 @@ const AboutPage = () => {
               {[
                 { title: 'Specialized Teams', text: 'Platform-specific experts who understand each marketplace deeply.' },
                 { title: 'Custom Solutions', text: 'No templates. Everything is tailored to your goals and market.' },
-                { title: 'Performance First', text: 'We focus on what matters most — visibility, conversions, and ROI.' },
+                { title: 'Performance First', text: 'We focus on what matters most visibility, conversions, and ROI.' },
                 { title: 'Transparent Process', text: 'We believe in honest work, clear updates, and no surprises.' },
                 { title: 'Global Reach', text: 'Serving clients across the US, UK, UAE, Canada and more.' },
               ].map((item, i) => (
@@ -103,7 +103,7 @@ const AboutPage = () => {
             <div className="vision-box">
               <h3>🚀 Our Vision</h3>
               <p>
-                To be the most trusted growth partner for eCommerce brands around the globe, delivering real results — not promises.
+                To be the most trusted growth partner for eCommerce brands around the globe, delivering real results not promises.
               </p>
             </div>
           </div>
@@ -128,7 +128,7 @@ const AboutPage = () => {
             <div className="value-box">
               <i className="fas fa-chart-line icon"></i>
               <h4>Customer Success</h4>
-              <p>Your growth is our mission — we’re invested in helping you succeed long term.</p>
+              <p>Your growth is our mission we’re invested in helping you succeed long term.</p>
             </div>
           </div>
         </div>

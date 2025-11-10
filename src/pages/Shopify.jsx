@@ -18,7 +18,7 @@ const shopifyServices = [
   {
     id: 'shopify-1',
     title: 'Shopify Store Setup & Customization',
-    text: 'We set up your Shopify store from scratch — including theme selection, essential pages, navigation menus, and store settings — tailored specifically to your brand. Our team ensures that your store is mobile-optimized, professionally configured, and ready for seamless shopping across all devices.',
+    text: 'We set up your Shopify store from scratch including theme selection, essential pages, navigation menus, and store settings tailored specifically to your brand. Our team ensures that your store is mobile-optimized, professionally configured, and ready for seamless shopping across all devices.',
     image: 'image1.jpg',
     icon: <FaStore />,
     benefits: ['Custom Layouts', 'Complete Setup', 'Responsive Design'],
@@ -36,7 +36,7 @@ const shopifyServices = [
   {
     id: 'shopify-3',
     title: 'Theme Design & Branding',
-    text: 'We customize your store theme to reflect your brand identity with consistency across all pages. From logo placement to typography, colors, and design layout — we ensure your store not only looks professional but also builds customer trust at every step.',
+    text: 'We customize your store theme to reflect your brand identity with consistency across all pages. From logo placement to typography, colors, and design layout we ensure your store not only looks professional but also builds customer trust at every step.',
     image: 'image3.jpg',
     icon: <FaPalette />,
     benefits: ['Brand Identity', 'Elegant Design', 'Consistent UI'],
@@ -54,7 +54,7 @@ const shopifyServices = [
   {
     id: 'shopify-5',
     title: 'Shopify Apps Configuration',
-    text: 'Extend your store’s functionality using trusted apps for reviews, upsells, loyalty programs, live chat, and more. We handpick, install, and configure apps that align with your business goals — enhancing both user experience and conversion potential.',
+    text: 'Extend your store’s functionality using trusted apps for reviews, upsells, loyalty programs, live chat, and more. We handpick, install, and configure apps that align with your business goals enhancing both user experience and conversion potential.',
     image: 'image5.jpg',
     icon: <FaCogs />,
     benefits: ['Enhanced Features', 'Sales Tools', 'Third-Party Integrations'],
@@ -63,7 +63,7 @@ const shopifyServices = [
   {
     id: 'shopify-6',
     title: 'Marketing & Automation',
-    text: 'We implement email marketing, welcome series, cart recovery, lead capture forms, and more to drive repeat purchases. Automation ensures you engage with customers at the right time — even while you sleep — and build long-term loyalty.',
+    text: 'We implement email marketing, welcome series, cart recovery, lead capture forms, and more to drive repeat purchases. Automation ensures you engage with customers at the right time even while you sleep and build long-term loyalty.',
     image: 'image6.jpg',
     icon: <FaBullhorn />,
     benefits: ['Email Campaigns', 'Lead Generation', 'Cart Recovery'],
@@ -72,7 +72,7 @@ const shopifyServices = [
   {
     id: 'shopify-7',
     title: 'Shopify Analytics & Reporting',
-    text: 'Gain deep insights into your store performance using analytics dashboards and reports. From real-time traffic monitoring to product performance, sales trends, and user behavior — we help you make data-driven decisions that boost your ROI.',
+    text: 'Gain deep insights into your store performance using analytics dashboards and reports. From real-time traffic monitoring to product performance, sales trends, and user behavior we help you make data-driven decisions that boost your ROI.',
     image: 'image7.jpg',
     icon: <FaChartLine />,
     benefits: ['Traffic Tracking', 'Sales Insights', 'Behavior Analysis'],
@@ -81,7 +81,7 @@ const shopifyServices = [
   {
     id: 'shopify-8',
     title: 'Store Maintenance & Support',
-    text: 'We provide ongoing support and maintenance including bug fixing, theme updates, and performance optimizations. Our proactive monitoring ensures your Shopify store remains stable, fast, and secure — giving you peace of mind and your customers a smooth shopping experience.',
+    text: 'We provide ongoing support and maintenance including bug fixing, theme updates, and performance optimizations. Our proactive monitoring ensures your Shopify store remains stable, fast, and secure giving you peace of mind and your customers a smooth shopping experience.',
     image: 'image8.jpg',
     icon: <FaTools />,
     benefits: ['24/7 Support', 'Bug Fixing', 'Store Uptime'],

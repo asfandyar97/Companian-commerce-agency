@@ -36,7 +36,7 @@ const tiktokServices = [
   {
     id: 'tiktok-3',
     title: 'TikTok Ads',
-    text: 'We design and manage TikTok ad campaigns focused on conversions. From eye-catching creatives and precise audience targeting to bidding strategies and performance tracking — our ad services ensure your budget is spent efficiently to generate real business results.',
+    text: 'We design and manage TikTok ad campaigns focused on conversions. From eye-catching creatives and precise audience targeting to bidding strategies and performance tracking our ad services ensure your budget is spent efficiently to generate real business results.',
     image: 'image3.jpg',
     icon: <FaBullseye />,
     benefits: ['Precise Targeting', 'High Engagement', 'ROI Focused'],
@@ -45,7 +45,7 @@ const tiktokServices = [
   {
     id: 'tiktok-4',
     title: 'TikTok Campaigns',
-    text: 'We craft seasonal, trend-driven, or product launch campaigns aligned with TikTok’s ever-changing trends. These campaigns are designed to go viral by tapping into current sounds, challenges, and user behavior patterns — increasing your store’s visibility and sales potential.',
+    text: 'We craft seasonal, trend-driven, or product launch campaigns aligned with TikTok’s ever-changing trends. These campaigns are designed to go viral by tapping into current sounds, challenges, and user behavior patterns increasing your store’s visibility and sales potential.',
     image: 'image4.jpg',
     icon: <FaFireAlt />,
     benefits: ['Trend-Driven', 'Creative Concepts', 'Customer Reach'],
@@ -72,7 +72,7 @@ const tiktokServices = [
   {
     id: 'tiktok-7',
     title: 'Real-time Order Sync',
-    text: 'Stay on top of your TikTok Shop operations with real-time order syncing. Our integration ensures inventory is up to date, orders are tracked accurately, and fulfillment is smooth — reducing manual errors and improving customer satisfaction.',
+    text: 'Stay on top of your TikTok Shop operations with real-time order syncing. Our integration ensures inventory is up to date, orders are tracked accurately, and fulfillment is smooth reducing manual errors and improving customer satisfaction.',
     image: 'image7.jpg',
     icon: <FaSync />,
     benefits: ['Live Sync', 'No Errors', 'Fast Fulfillment'],
@@ -81,7 +81,7 @@ const tiktokServices = [
   {
     id: 'tiktok-8',
     title: 'Performance Reporting',
-    text: 'Get clear, actionable insights into your TikTok Shop’s performance with our detailed reporting tools. From ad effectiveness and conversion metrics to audience engagement and product performance — we help you make informed decisions and grow with confidence.',
+    text: 'Get clear, actionable insights into your TikTok Shop’s performance with our detailed reporting tools. From ad effectiveness and conversion metrics to audience engagement and product performance we help you make informed decisions and grow with confidence.',
     image: 'image8.jpg',
     icon: <FaChartBar />,
     benefits: ['Smart Insights', 'Campaign Analysis', 'Better Decisions'],

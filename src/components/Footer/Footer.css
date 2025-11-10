@@ -65,7 +65,7 @@
 }
 
 .footer-social li a:hover {
-  background-color: #e68900;
+  background-color: #d4af37;
 }
 
 /* Other columns: contact, links, newsletter */
@@ -103,7 +103,7 @@
 }
 
 .footer-link-block ul li a:hover {
-  color: #e68900;
+  color: #d4af37;
 }
 
 /* --- Contact Info Section (aligned & responsive) --- */
@@ -130,11 +130,11 @@
 }
 
 .footer-contact li a:hover {
-  color: #ff9900;
+  color: #d4af37;
 }
 
 .footer-icon {
-  color: #ff9900;
+  color: #d4af37;
   font-size: 16px;
   min-width: 18px;
 }
@@ -175,7 +175,7 @@
 }
 
 .footer-cta-button {
-  background-color: #ff9900;
+  background-color: #d4af37;
   color: white;
   padding: 10px 20px;
   font-weight: 600;
@@ -186,7 +186,7 @@
 }
 
 .footer-cta-button:hover {
-  background-color: #e68900;
+  background-color: #d4af37;
 }
 
 @media (min-width: 992px) {

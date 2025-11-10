@@ -49,7 +49,7 @@ const amazonServices = [
     id: "amazon-4",
     title: "FBA Shipment Creation",
     tag: "Shipping",
-    text: "Manage your FBA shipments with proper labeling, packaging, and timely delivery setup. We help you avoid common errors that lead to delays or rejections by Amazon. Our team ensures every shipment complies with Amazon's strict FBA requirements — from barcode labeling to box content information. We streamline the entire process to reduce hassle, save time, and ensure your inventory reaches Amazon’s fulfillment centers quickly and accurately.",
+    text: "Manage your FBA shipments with proper labeling, packaging, and timely delivery setup. We help you avoid common errors that lead to delays or rejections by Amazon. Our team ensures every shipment complies with Amazon's strict FBA requirements from barcode labeling to box content information. We streamline the entire process to reduce hassle, save time, and ensure your inventory reaches Amazon’s fulfillment centers quickly and accurately.",
     image: "image4.jpg",
     icon: <FaTruck />,
     benefits: ["Timely Shipments", "Accurate Labels", "Amazon Compliance"],

@@ -19,7 +19,10 @@ body {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 50px;
-  color: #1e1e2f;
+  color: #d4af37;
+}
+.amazon-1{
+  color: #d4af37;
 }
 
 /* == Service Box == */
@@ -83,7 +86,7 @@ body {
   position: absolute;
   top: -15px;
   left: 0;
-  background-color: #ff9900;
+  background-color: #d4af37;
   color: #fff;
   padding: 6px 14px;
   font-size: 13px;

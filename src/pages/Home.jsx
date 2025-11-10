@@ -195,7 +195,7 @@ const Home = () => {
               At Companian Commerce, we help eCommerce brands launch, grow, and scale across platforms like Amazon, Shopify, TikTok Shop, and eBay. Whether you’re just starting out or managing a growing online store, our expert team provides tailored services from product listings and storefront setup to advertising, SEO, and order management.
             </p>
             <p className="about-highlight">
-              Your growth is our mission — we don’t just work with sellers, we build lasting success stories.
+              Your growth is our mission we don’t just work with sellers, we build lasting success stories.
             </p>
             <a href="/about" className="read-more-btn" data-aos="zoom-in">Read More</a>
           </div>
@@ -344,7 +344,7 @@ const Home = () => {
               <div className="feature-box">
                 <div className="icon"><i className="fas fa-chart-line"></i></div>
                 <h3>Proven Results</h3>
-                <p>Our clients have seen real growth — some reaching 6-7 figures monthly.</p>
+                <p>Our clients have seen real growth some reaching 6-7 figures monthly.</p>
               </div>
             </div>
           </div>
@@ -456,7 +456,7 @@ const Home = () => {
         <section className="add-review-section" id="add-review">
   <div className="add-review-container">
     <h2 className="add-review-title">Add Your Review</h2>
-    <p className="add-review-subtitle">We value your feedback — please share your experience below.</p>
+    <p className="add-review-subtitle">We value your feedback please share your experience below.</p>
 
     {/* Add Review Button */}
     <button

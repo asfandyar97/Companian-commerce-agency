@@ -6,7 +6,7 @@
   padding: 0 40px;
   font-family: 'Segoe UI', sans-serif;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
@@ -16,76 +16,29 @@
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* === Homepage Transparent Navbar === */
-.home-navbar {
-  background-color: transparent;
-  color: white;
-}
-
-/* === Other Pages Navbar === */
+/* === Default Navbar for all pages === */
 .default-navbar {
   position: relative;
   background-color: white;
   color: #333;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0; /* remove any internal spacing */
 }
 
 /* === Logo === */
-/* Home Page Logo */
-
-
-/* Logo top-left */
-.home-navbar .logo {
-  position: absolute;
-  top: -28px;
-  left: 0;
-  z-index: 1001;
-}
-
-.home-navbar .logo img {
-  height: 200px;
-  width: auto;
-  background: transparent !important;
-  mix-blend-mode: lighten;
-  transition: all 0.3s ease, transform 0.4s ease;
-}
-
-.home-navbar .logo img:hover {
-  transform: scale(1.05);
-}
-
-/* Navbar menu and contact remain centered */
-.navbar-menu {
-  display: flex;
-  list-style: none;
-  gap: 28px;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
-
-
-
-
-/* Other Pages Logo */
 .default-navbar .logo img {
-  height: 170px; /* normal size for other pages */
-  margin-top: 13px;
+  height: 160px;
+  margin-top: 6px;
   mix-blend-mode: normal;
   background: none;
   transition: all 0.3s ease, transform 0.3s ease;
+  display: block;
 }
 .default-navbar .logo img:hover {
   transform: scale(1.03);
 }
 
-/* === Desktop Menu (Centered) === */
+/* === Navbar Menu === */
 .navbar-menu {
   display: flex;
   list-style: none;
@@ -140,30 +93,19 @@
 }
 
 .navbar-menu a.active {
-  color: #e07f00;
+  color: #d4af37;
 }
 
 .navbar-menu a:hover {
   transform: translateY(-2px);
 }
 
-/* === Homepage White Text === */
-.home-navbar .navbar-menu a {
-  color: white;
-}
-.home-navbar .navbar-menu a.active {
-  color: white;
-}
-.home-navbar .navbar-menu a::before {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* === Default Page Text === */
+/* === Navbar Menu Text Colors === */
 .default-navbar .navbar-menu a {
   color: #333;
 }
 .default-navbar .navbar-menu a.active {
-  color: #e07f00;
+  color: #d4af37;
 }
 
 /* === Desktop Contact Button === */
@@ -176,9 +118,10 @@
   align-items: center;
   height: 100%;
 }
+
 .contact-link a {
   padding: 12px 20px;
-  background-color: #e07f00;
+  background-color: #d4af37;
   color: white;
   font-weight: 600;
   border-radius: 30px;
@@ -188,20 +131,19 @@
   align-items: center;
   height: 40px;
 }
+
 .contact-link a:hover {
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 6px 12px rgba(224, 127, 0, 0.3);
 }
 
-/* === Mobile Toggle Icon === */
+/* === Mobile Toggle Icon (Hamburger) === */
 .menu-toggle {
   display: none;
   font-size: 28px;
   cursor: pointer;
-  color: #d97706;
+  color: #d4af37;
   position: absolute;
-  top: 30px;
-  right: 25px;
   z-index: 1002;
 }
 
@@ -215,25 +157,48 @@
   .navbar {
     flex-direction: column;
     height: auto;
-    padding: 10px 20px;
+    padding: 0;
     position: relative;
     z-index: 1000;
   }
 
-  .logo {
-    width: 100%;
+  /* Mobile Logo — FIXED */
+  .default-navbar .logo {
+    position: relative;
     display: flex;
     justify-content: center;
-    z-index: 1001;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    height: auto;
   }
 
-  .logo img {
-    height: 160px; /* mobile thoda chhota */
-    margin-top: 10px;
+  .default-navbar .logo img {
+    height: 150px; /* keep large but balanced */
+    width: auto;
+    margin: 0;
+    display: block;
   }
 
+  /* Remove white gap above and below navbar completely */
+  .default-navbar {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  /* Hamburger button */
   .menu-toggle {
     display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #d4af37;
+    position: absolute;
+    top: 22%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1002;
   }
 
   .navbar-menu {
@@ -243,12 +208,12 @@
     justify-content: flex-start;
     position: fixed;
     top: 10px;
-    left: 60px;
+    left: 70px;
     height: 100vh;
     width: 100%;
     backdrop-filter: blur(12px);
-    padding-top: 180px;
-    padding-bottom: 30px;
+    padding-top: 160px;
+    padding-bottom: 20px;
     box-shadow: none;
     z-index: 999;
     transform: scale(0.95);
@@ -269,12 +234,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 12px 0;
+    margin: 10px 0;
   }
 
   .navbar-menu a {
     display: inline-block;
-    padding: 14px 24px;
+    padding: 12px 24px;
     font-size: 16px;
     font-weight: 600;
     border-radius: 30px;
@@ -288,7 +253,7 @@
 
   .navbar-menu a:hover {
     background-color: #f3f3f3;
-    color: #e07f00;
+    color: #d4af37;
     transform: translateY(-2px);
   }
 
@@ -299,15 +264,6 @@
   .mobile-contact-link {
     display: block;
   }
-
-  .home-navbar .navbar-menu a {
-    color: #333;
-  }
-
-  .home-navbar .navbar-menu a.active {
-    color: #e07f00;
-    background-color: #f2f6ff;
-  }
 }
 
 /* === Smooth transition on scroll/logo/menu === */
@@ -316,21 +272,3 @@
 .contact-link a {
   transition: all 0.3s ease, transform 0.3s ease;
 }
-@media (max-width: 768px) {
-  /* Home screen me logo ka position fix */
-  .home-navbar .logo {
-    position: relative;
-    top: 0;            /* overlap remove */
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;  /* thoda gap upar se */
-  }
-
-  .home-navbar .logo img {
-    height: 150px;     /* mobile ke liye thoda chhota size */
-    mix-blend-mode: lighten;
-  }
-}
-

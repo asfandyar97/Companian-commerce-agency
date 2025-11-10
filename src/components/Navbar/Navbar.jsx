@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const location = useLocation();
-  const isHome = location.pathname === "/";
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -16,9 +14,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${isHome ? "home-navbar" : "default-navbar"}`}>
+    <nav className="navbar default-navbar">
       <div className="logo">
-        <img src="/logo-new.png" alt="Logo" />
+        <img
+          src="/logo-new.png"
+          alt="Companion Commerce Agency"
+        />
       </div>
 
       <div className="menu-toggle" onClick={toggleMenu}>
@@ -36,7 +37,6 @@ const Navbar = () => {
             About
           </NavLink>
         </li>
-
         <li>
           <NavLink to="/amazon" onClick={closeMenu} className={({ isActive }) => (isActive ? "active" : "")}>
             Amazon

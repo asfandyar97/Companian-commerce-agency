@@ -115,7 +115,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: #e68900;
+  border-color: #d4af37;
   outline: none;
 }
 
@@ -125,7 +125,7 @@ textarea {
 }
 
 button {
-  background-color: #e29d43;
+  background-color: #d4af37;
   color: white;
   padding: 14px;
   font-size: 16px;

@@ -27,7 +27,7 @@ const ebayServices = [
   {
     id: 'ebay-2',
     title: 'eBay Store Design & Branding',
-    text: 'Design a professional, branded storefront that builds trust and encourages repeat customers. Visual appeal and branding consistency help attract and retain buyers. We create custom store banners, category layouts, and a cohesive brand identity that sets you apart from competitors. A well-designed store enhances buyer confidence, improves navigation, and increases the likelihood of repeat purchases — making your eBay store a true brand destination.',
+    text: 'Design a professional, branded storefront that builds trust and encourages repeat customers. Visual appeal and branding consistency help attract and retain buyers. We create custom store banners, category layouts, and a cohesive brand identity that sets you apart from competitors. A well-designed store enhances buyer confidence, improves navigation, and increases the likelihood of repeat purchases making your eBay store a true brand destination.',
     image: 'image2.jpg',
     icon: <FaPaintBrush />,
     benefits: ['Branded Design', 'Professional Look', 'Repeat Buyers'],
@@ -36,7 +36,7 @@ const ebayServices = [
   {
     id: 'ebay-3',
     title: 'Keyword Targeting & Research',
-    text: 'Conduct targeted keyword research for your products to help them rank higher in eBay search results, increasing visibility and sales potential. We analyze top-performing keywords based on eBay’s unique algorithm, competitor insights, and real buyer behavior. Our approach ensures that your listings are matched with the most relevant and high-traffic terms — leading to stronger search performance and more qualified traffic.',
+    text: 'Conduct targeted keyword research for your products to help them rank higher in eBay search results, increasing visibility and sales potential. We analyze top-performing keywords based on eBay’s unique algorithm, competitor insights, and real buyer behavior. Our approach ensures that your listings are matched with the most relevant and high-traffic terms leading to stronger search performance and more qualified traffic.',
     image: 'image3.jpg',
     icon: <FaSearch />,
     benefits: ['Relevant Keywords', 'Better Visibility', 'Targeted Search'],
@@ -45,7 +45,7 @@ const ebayServices = [
   {
     id: 'ebay-4',
     title: 'Competitor Analysis & Strategy',
-    text: 'We evaluate your competitors and craft strategies to out-rank and out-sell them effectively. Stay ahead with smart pricing, positioning, and promotions. Our team conducts in-depth analysis of competing listings, pricing patterns, shipping options, and buyer feedback trends. Based on this data, we implement actionable strategies that give you a competitive edge — helping your products stand out and dominate high-converting categories.',
+    text: 'We evaluate your competitors and craft strategies to out-rank and out-sell them effectively. Stay ahead with smart pricing, positioning, and promotions. Our team conducts in-depth analysis of competing listings, pricing patterns, shipping options, and buyer feedback trends. Based on this data, we implement actionable strategies that give you a competitive edge helping your products stand out and dominate high-converting categories.',
     image: 'image4.jpg',
     icon: <FaUsers />,
     benefits: ['Market Advantage', 'Price Strategy', 'Competitive Edge'],

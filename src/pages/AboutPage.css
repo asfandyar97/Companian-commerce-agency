@@ -41,7 +41,7 @@ body {
 .why-us-section h2,
 .team-section h2,
 .cta-section h2 {
-  color: #ff9900;
+  color: #d4af37;
 }
 
 /* === INTRO === */
@@ -76,7 +76,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 40px;
-  color: #ff9900;
+  color: #d4af37;
 }
 
 /* ✅ Centered & Balanced Layout */
@@ -124,7 +124,7 @@ body {
 }
 
 .why-icon {
-  color: #ff9900;
+  color: #d4af37;
   font-size: 18px;
   margin-top: 4px;
   flex-shrink: 0;
@@ -202,7 +202,7 @@ body {
 .vision-box h3 {
   font-size: 22px;
   margin-bottom: 15px;
-  color: #ff9900;
+  color: #d4af37;
 }
 
 .mission-box p,
@@ -220,7 +220,7 @@ body {
 
 .values-section h2 {
   font-size: 32px;
-  color: #ff9900;
+  color: #d4af37;
   margin-bottom: 50px;
   font-weight: 700;
 }
@@ -248,7 +248,7 @@ body {
 
 .value-box .icon {
   font-size: 32px;
-  color: #ff9900;
+  color: #d4af37;
   margin-bottom: 15px;
 }
 
@@ -277,7 +277,7 @@ body {
 }
  /* cta section start */
 .cta-section {
-  background: linear-gradient(135deg, #ff9900, #ffbd59);
+  background: linear-gradient(135deg, #d4af37, #ffbd59);
   color: #fff;
   padding: 100px 20px;
   text-align: center;
@@ -324,7 +324,7 @@ body {
 
 .cta-button {
   background-color: #fff;
-  color: #f39810;
+  color: #d4af37;
   padding: 14px 30px;
   border-radius: 50px;
   font-size: 16px;
@@ -336,7 +336,7 @@ body {
 
 .cta-button:hover {
   background-color: #fff3e0;
-  color: #d47100;
+  color: #d4af37;
 }
 
 /* Responsive */

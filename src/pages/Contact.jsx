@@ -110,7 +110,7 @@ const Contact = () => {
         <h2>Contact us</h2>
         <p>
           Have a question or need assistance? Fill out the form below and our team will get back to you shortly.
-          We also offer a free eCommerce audit — simply mention it in your message, and our experts will review your store and share tailored recommendations to help you grow.
+          We also offer a free eCommerce audit simply mention it in your message, and our experts will review your store and share tailored recommendations to help you grow.
         </p>
 
         <form onSubmit={handleSubmit}>

@@ -36,7 +36,7 @@ const tiktokServices = [
   {
     id: 'tiktok-3',
     title: 'TikTok Ads',
-    text: 'We design and manage TikTok ad campaigns focused on conversions. From eye-catching creatives and precise audience targeting to bidding strategies and performance tracking our ad services ensure your budget is spent efficiently to generate real business results.',
+    text: 'We design and manage TikTok ad campaigns focused on conversions. From eye-catching creatives and precise audience targeting to bidding strategies and performance tracking, our ad services ensure your budget is spent efficiently to generate real business results.',
     image: 'image3.jpg',
     icon: <FaBullseye />,
     benefits: ['Precise Targeting', 'High Engagement', 'ROI Focused'],
@@ -45,7 +45,7 @@ const tiktokServices = [
   {
     id: 'tiktok-4',
     title: 'TikTok Campaigns',
-    text: 'We craft seasonal, trend-driven, or product launch campaigns aligned with TikTok’s ever-changing trends. These campaigns are designed to go viral by tapping into current sounds, challenges, and user behavior patterns increasing your store’s visibility and sales potential.',
+    text: 'We craft seasonal, trend-driven, or product launch campaigns aligned with TikTok’s ever-changing trends. These campaigns are designed to go viral by tapping into current sounds, challenges, and user behavior patterns, increasing your store’s visibility and sales potential.',
     image: 'image4.jpg',
     icon: <FaFireAlt />,
     benefits: ['Trend-Driven', 'Creative Concepts', 'Customer Reach'],
@@ -72,7 +72,7 @@ const tiktokServices = [
   {
     id: 'tiktok-7',
     title: 'Real-time Order Sync',
-    text: 'Stay on top of your TikTok Shop operations with real-time order syncing. Our integration ensures inventory is up to date, orders are tracked accurately, and fulfillment is smooth reducing manual errors and improving customer satisfaction.',
+    text: 'Stay on top of your TikTok Shop operations with real-time order syncing. Our integration ensures inventory is up to date, orders are tracked accurately, and fulfillment is smooth — reducing manual errors and improving customer satisfaction.',
     image: 'image7.jpg',
     icon: <FaSync />,
     benefits: ['Live Sync', 'No Errors', 'Fast Fulfillment'],
@@ -81,7 +81,7 @@ const tiktokServices = [
   {
     id: 'tiktok-8',
     title: 'Performance Reporting',
-    text: 'Get clear, actionable insights into your TikTok Shop’s performance with our detailed reporting tools. From ad effectiveness and conversion metrics to audience engagement and product performance we help you make informed decisions and grow with confidence.',
+    text: 'Get clear, actionable insights into your TikTok Shop’s performance with our detailed reporting tools. From ad effectiveness and conversion metrics to audience engagement and product performance, we help you make informed decisions and grow with confidence.',
     image: 'image8.jpg',
     icon: <FaChartBar />,
     benefits: ['Smart Insights', 'Campaign Analysis', 'Better Decisions'],
@@ -93,24 +93,33 @@ const TiktokShop = () => {
   return (
     <div className="services-wrapper">
       <Helmet>
+        {/* ✅ SEO Optimized Helmet for Companian Commerce Agency */}
         <title>TikTok Shop Services | Companian Commerce Agency</title>
         <meta
           name="description"
-          content="Grow your TikTok Shop with viral-optimized listings, SEO, TikTok ads, influencer marketing, and order automation."
+          content="Grow your TikTok Shop with viral-optimized listings, SEO, TikTok ads, influencer marketing, and order automation powered by Companian Commerce Agency."
         />
+
+        {/* ✅ Canonical tag (important for indexing) */}
+        <link rel="canonical" href="https://companiancommerce.com/tiktokshop" />
+
+        {/* ✅ Open Graph / Social Meta */}
         <meta property="og:title" content="TikTok Shop Services | Companian Commerce Agency" />
         <meta
           property="og:description"
-          content="TikTok Shop listing optimization, influencer campaigns, ads, SEO, analytics, and automated order sync — powered by Companian Commerce."
+          content="TikTok Shop listing optimization, influencer campaigns, ads, SEO, analytics, and automated order sync — powered by Companian Commerce Agency."
         />
-        <meta property="og:image" content="/og-image.png" />
+        <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
+        <meta property="og:url" content="https://companiancommerce.com/tiktokshop" />
         <meta property="og:type" content="website" />
+
+        {/* ✅ Robots for crawl */}
         <meta name="robots" content="index, follow" />
       </Helmet>
 
-
       <div className="services-container">
         <h2 className="services-title">TikTok Shop Services</h2>
+
         {tiktokServices.map((service, index) => (
           <motion.div
             key={service.id}
@@ -125,6 +134,7 @@ const TiktokShop = () => {
               <h3 className="icon-title">
                 {service.icon} {service.title}
               </h3>
+
               <ul className="benefit-list">
                 {service.benefits.map((benefit, idx) => (
                   <li key={idx}>
@@ -132,9 +142,11 @@ const TiktokShop = () => {
                   </li>
                 ))}
               </ul>
+
               <div className="highlight-box">{service.highlightText}</div>
               <p>{service.text}</p>
             </div>
+
             <div className="service-image">
               <div className="image-box">
                 <img src={service.image} alt={service.title} loading="lazy" />

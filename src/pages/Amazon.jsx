@@ -115,7 +115,7 @@ const Amazon = () => {
           property="og:description"
           content="Amazon listing optimization, PPC management, FBA support, product launches, SEO & brand registry services to scale your Amazon store with Companian Commerce."
         />
-        <meta property="og:image" content="https://companiancommerce.com/og-image.png" />
+        <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
 

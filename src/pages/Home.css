@@ -38,7 +38,7 @@
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 10px;
 }
 
 .overlay-content h1 {
@@ -140,7 +140,7 @@
 /* about section start */
 /* === ABOUT SECTION === */
 .about-section {
-  background-color: #ffffff;
+  background-color: #f9fafb;
   padding: 100px 20px;
 }
 
@@ -173,14 +173,14 @@
 }
 
 .about-content h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   color: #d4af37;
   margin-bottom: 20px;
 }
 
 .about-content p {
-  font-size: 16px;
+  font-size: 17px;
   color: #444;
   line-height: 1.7;
   margin-bottom: 20px;
@@ -212,10 +212,12 @@
   .about-container {
     flex-direction: column;
     text-align: center;
+    
   }
 
   .about-content {
     max-width: 100%;
+    padding-top: 40px;
   }
 
   .about-image {
@@ -226,9 +228,9 @@
 /* about section end */
 /* === Sections === */
 .white-background {
-  background: white;
+  background: #f9fafb;
   color: #000;
-  padding-top: 60px;
+  padding-top: 0px;
 }
 
 .amazon-section,
@@ -303,11 +305,12 @@
   color: #d4af37;
 }
 
+
 /* === Process Sections === */
 .our-process-section {
   padding: 80px 20px;
   text-align: center;
-  background-color: white;
+  background-color: #f9fafb;
 }
 
 .section-title {
@@ -383,16 +386,11 @@
   .amazon-brand-section {
     flex-direction: column;
     text-align: center;
+    padding-bottom: 30px; /* Add padding-bottom */
+    margin-top: -60px;     /* Move section up */
   }
 
-  .process-container,
-  .we-work-container {
-    flex-direction: column;
-  }
-
-  .process-steps {
-    grid-template-columns: 1fr;
-  }
+ 
 
   .hero-section {
     padding: 40px 10px;
@@ -406,6 +404,7 @@
     font-size: 16px;
   }
 }
+
 
 
 
@@ -432,6 +431,7 @@
   font-size: 16px;
   line-height: 1.6;
 }
+
 /* === amazon brand end === */
 /* WHY CHOOSE US SECTION */
 .why-choose-us {
@@ -1181,3 +1181,4 @@
     font-size: 24px;
   }
 }
+

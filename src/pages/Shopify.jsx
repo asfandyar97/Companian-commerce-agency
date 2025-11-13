@@ -104,9 +104,9 @@ const Shopify = () => {
         />
         <meta
           property="og:description"
-          content="Expert Shopify services including custom store setup, theme design, SEO, app integration, checkout setup, and ongoing growth strategy — manage your store with Companian Commerce Agency."
+          content="Expert Shopify services including custom store setup, theme design, SEO, app integration, checkout setup, and ongoing growth strategy manage your store with Companian Commerce Agency."
         />
-        <meta property="og:image" content="https://companiancommerce.com/og-image.png" />
+        <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
 

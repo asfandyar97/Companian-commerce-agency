@@ -14,34 +14,37 @@ const AboutPage = () => {
 
   return (
     <div className="about-page">
-      <Helmet>
-        <title>About Us | Companian Commerce Agency</title>
+    <Helmet>
+  <title>About Us | Companian Commerce Agency</title>
 
-        <meta
-          name="description"
-          content="Learn about Companian Commerce Agency — expert eCommerce team helping brands scale on Amazon, eBay, Shopify, and TikTok Shop through advanced seller services, PPC marketing, and catalog optimization."
-        />
+  <meta
+    name="description"
+    content="Learn about Companian Commerce Agency expert eCommerce team helping brands scale on Amazon, eBay, Shopify, and TikTok Shop through advanced seller services, PPC marketing, and catalog optimization."
+  />
 
-        <link rel="canonical" href="https://www.companiancommerce.com/about" />
+  <link rel="canonical" href="https://www.companiancommerce.com/about" />
 
-        {/* Open Graph */}
-        <meta property="og:title" content="About Companian Commerce Agency" />
-        <meta
-          property="og:description"
-          content="Meet the expert team behind Companian Commerce — dedicated to scaling Amazon, eBay, Shopify & TikTok Shop brands."
-        />
-        <meta property="og:image" content="https://www.companiancommerce.com/og-image.png" />
-        <meta property="og:url" content="https://www.companiancommerce.com/about" />
-        <meta property="og:type" content="website" />
+  {/* Open Graph */}
+  <meta property="og:title" content="About Companian Commerce Agency" />
+  <meta
+    property="og:description"
+    content="Meet the expert team behind Companian Commerce dedicated to scaling Amazon, eBay, Shopify & TikTok Shop brands."
+  />
+  <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://www.companiancommerce.com/about" />
+  <meta property="og:type" content="website" />
 
-        <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow" />
 
-        {/* Keywords */}
-        <meta
-          name="keywords"
-          content="Companian Commerce, About Companian Commerce Agency, Amazon management team, eCommerce experts, Shopify specialists, TikTok Shop agency, eBay account management team"
-        />
-      </Helmet>
+  {/* Keywords */}
+  <meta
+    name="keywords"
+    content="Companian Commerce, About Companian Commerce Agency, Amazon management team, eCommerce experts, Shopify specialists, TikTok Shop agency, eBay account management team"
+  />
+</Helmet>
+
 
 
       {/* HERO SECTION */}

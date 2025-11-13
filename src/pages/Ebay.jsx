@@ -104,9 +104,9 @@ const Ebay = () => {
         />
         <meta
           property="og:description"
-          content="Expert eBay management including listing optimization, store design, SEO, PPC ads, keyword targeting, and analytics — scale your eBay business with Companian Commerce Agency."
+          content="Expert eBay management including listing optimization, store design, SEO, PPC ads, keyword targeting, and analytics scale your eBay business with Companian Commerce Agency."
         />
-        <meta property="og:image" content="https://companiancommerce.com/og-image.png" />
+        <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
 

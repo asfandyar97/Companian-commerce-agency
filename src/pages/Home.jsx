@@ -7,6 +7,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Helmet } from "react-helmet";
+import FAQSection from "../components/FAQSection/FAQSection";
+
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -204,72 +207,75 @@ const Home = () => {
 
       {/* about section end  */}
       {/* White Section */}
-      <div className="white-background">
-        {/* Amazon Section */}
-        <div className="amazon-section">
-          <div className="amazon-text" data-aos="fade-right">
-            <p className="small-title">Power up your eCommerce Journey</p>
-            <h2>Best Amazon Account Management Services Agency</h2>
-            <p className="description">
-              We specialize in comprehensive Amazon Seller Account Management,
-              offering a range of services. Let us assist you in optimizing your
-              Amazon presence and driving your business to new heights.
-            </p>
-          </div>
-          <div className="amazon-image" data-aos="fade-left">
-            <img src="a-1.png" alt="Amazon" />
-          </div>
-        </div>
+     <div className="white-background">
+  {/* Amazon Section */}
+  <div className="amazon-section">
+    <div className="amazon-text" data-aos="fade-right" data-aos-duration="1000">
+      <p className="small-title">Power up your eCommerce Journey</p>
+      <h2>Best Amazon Account Management Services Agency</h2>
+      <p className="description">
+        We specialize in comprehensive Amazon Seller Account Management,
+        offering a range of services. Let us assist you in optimizing your
+        Amazon presence and driving your business to new heights.
+      </p>
+    </div>
+    <div className="amazon-image" data-aos="fade-left" data-aos-duration="1000">
+      <img src="a-1.png" alt="Amazon" />
+    </div>
+  </div>
 
-        <div className="amazon-end-section">
-          <div className="amazon-end-text" data-aos="fade-right">
-            <h2>End to end Amazon Account Management Service</h2>
-            <p className="description">
-              Along with ensuring that your brand story is consistent across your
-              Amazon Product Listings, we protect your brand with end-to-end
-              compliance and customer satisfaction.
-            </p>
-            <ul className="amazon-features">
-              <li>Storefront Setup</li>
-              <li>Strategic Guidance</li>
-              <li>Promotional Approaches</li>
-              <li>Storefront Monitoring</li>
-              <li>Returns & Refunds Management & More</li>
-            </ul>
-          </div>
-          <div className="amazon-end-image" data-aos="fade-left">
-            <img src="a-2.png" alt="Amazon Management" />
-          </div>
-        </div>
+  {/* Amazon End Section */}
+  <div className="amazon-end-section">
+    <div className="amazon-end-text" data-aos="fade-right" data-aos-duration="1000">
+      <h2>End to end Amazon Account Management Service</h2>
+      <p className="description">
+        Along with ensuring that your brand story is consistent across your
+        Amazon Product Listings, we protect your brand with end-to-end
+        compliance and customer satisfaction.
+      </p>
+      <ul className="amazon-features">
+        <li>Storefront Setup</li>
+        <li>Strategic Guidance</li>
+        <li>Promotional Approaches</li>
+        <li>Storefront Monitoring</li>
+        <li>Returns & Refunds Management & More</li>
+      </ul>
+    </div>
+    <div className="amazon-end-image" data-aos="fade-left" data-aos-duration="1000">
+      <img src="a-2.png" alt="Amazon Management" />
+    </div>
+  </div>
 
-        <div className="amazon-brand-section">
-          <div className="amazon-brand-text" data-aos="fade-right">
-            <h2>Amazon Brand Advertising</h2>
-            <p className="description">
-              Our team utilizes a mix of advertising strategies across different
-              Amazon ad types to drive more traffic to your listings and maximize
-              your ROI.
-            </p>
-            <ul className="amazon-features">
-              <li>Paid Advertising Management</li>
-              <li>Sponsored Brands Ads</li>
-              <li>Sponsored TV Ads</li>
-              <li>Sponsored Product Ads</li>
-              <li>Sponsored Display Ads</li>
-            </ul>
-          </div>
-          <div className="amazon-brand-image" data-aos="fade-left">
-            <img src="a-3.png" alt="Amazon Brand Advertising" />
-          </div>
-        </div>
+  {/* Amazon Brand Section */}
+  <div className="amazon-brand-section">
+    <div className="amazon-brand-text" data-aos="fade-right" data-aos-duration="1000">
+      <h2>Amazon Brand Advertising</h2>
+      <p className="description">
+        Our team utilizes a mix of advertising strategies across different
+        Amazon ad types to drive more traffic to your listings and maximize
+        your ROI.
+      </p>
+      <ul className="amazon-features">
+        <li>Paid Advertising Management</li>
+        <li>Sponsored Brands Ads</li>
+        <li>Sponsored TV Ads</li>
+        <li>Sponsored Product Ads</li>
+        <li>Sponsored Display Ads</li>
+      </ul>
+    </div>
+    <div className="amazon-brand-image" data-aos="fade-left" data-aos-duration="1000">
+      <img src="a-3.png" alt="Amazon Brand Advertising" />
+    </div>
+  </div>
 
-        <section className="amazon-brand">
-          <h2>Amazon Brand Advertising</h2>
-          <p>
-            Showcase your brand with Sponsored Brands & VCPM video ads to dominate
-            the Amazon search results.
-          </p>
-        </section>
+  {/* Amazon Brand Info Section */}
+  <section className="amazon-brand">
+    <h2>Amazon Brand Advertising</h2>
+    <p>
+      Showcase your brand with Sponsored Brands & VCPM video ads to dominate
+      the Amazon search results.
+    </p>
+  </section>
 
         {/* WHY CHOOSE US SECTION */}
         <section className="why-choose-us">
@@ -648,6 +654,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+         <FAQSection />
       </div>
     </div>
   );

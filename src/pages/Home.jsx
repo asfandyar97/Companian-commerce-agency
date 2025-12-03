@@ -99,34 +99,86 @@ const Home = () => {
 
   return (
     <div className="home-wrapper">
-      <Helmet>
-        <title>Companian Commerce Agency — Amazon, eBay, Shopify & TikTok Experts</title>
+<Helmet>
+  {/* ✅ Page Title & Description */}
+  <title>Companian Commerce Agency | Amazon, Shopify, eBay & TikTok eCommerce Experts</title>
+  <meta
+    name="description"
+    content="Professional eCommerce agency helping brands grow on Amazon, Shopify, eBay & TikTok Shop. Services include FBA support, PPC campaigns, product catalog optimization, and full marketplace management."
+  />
+  <link rel="canonical" href="https://www.companiancommerce.com/" />
+  <meta name="robots" content="index, follow" />
 
-        <meta
-          name="description"
-          content="Companian Commerce Agency helps brands grow on Amazon, eBay, Shopify, and TikTok Shop with eCommerce management, FBA support, PPC advertising, and catalog optimization."
-        />
+  {/* ✅ Open Graph / Social Sharing */}
+  <meta property="og:title" content="Companian Commerce Agency" />
+  <meta
+    property="og:description"
+    content="Grow your brand with our expert eCommerce team across Amazon, Shopify, eBay & TikTok Shop, offering FBA support, PPC marketing, and catalog optimization."
+  />
+  <meta property="og:image" content="https://www.companiancommerce.com/og-image.png" />
+  <meta property="og:url" content="https://www.companiancommerce.com/" />
+  <meta property="og:type" content="website" />
 
-        <link rel="canonical" href="https://www.companiancommerce.com/" />
+  {/* ✅ Facebook & LinkedIn Publisher / Author */}
+  <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
+  <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
 
-        <meta name="robots" content="index, follow" />
+  {/* ✅ Optional Keywords */}
+  <meta
+    name="keywords"
+    content="Companian Commerce, eCommerce agency, Amazon agency, Shopify experts, eBay services, TikTok Shop management, FBA service, PPC advertising, catalog optimization, product listing optimization"
+  />
 
-        {/* Open Graph */}
-        <meta property="og:title" content="Companian Commerce Agency" />
-        <meta
-          property="og:description"
-          content="Grow your brand with expert eCommerce services across Amazon, eBay, Shopify & TikTok Shop."
-        />
-        <meta property="og:image" content="https://www.companiancommerce.com/og-image.png" />
-        <meta property="og:url" content="https://www.companiancommerce.com/" />
-        <meta property="og:type" content="website" />
+  {/* ✅ Contact Info */}
+  <meta name="contact:email" content="info@companiancommerce.com" />
+  <meta name="contact:phone_number" content="+923155513063" />
 
-        {/* Keywords */}
-        <meta
-          name="keywords"
-          content="Companian Commerce, Amazon agency, eBay services, Shopify experts, TikTok Shop management, FBA service, eCommerce marketing, product listing optimization"
-        />
-      </Helmet>
+  {/* ⭐⭐⭐ COMPLETE ORGANIZATION SCHEMA (with new logo) ⭐⭐⭐ */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Companian Commerce Agency",
+      "url": "https://www.companiancommerce.com",
+      "logo": "https://www.companiancommerce.com/logo-new.png",
+      "sameAs": [
+        "https://www.facebook.com/share/14UF1Vx9iZu/",
+        "https://www.linkedin.com/company/companian-commerce-agency/"
+      ],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+923155513063",
+        "contactType": "customer service",
+        "email": "info@companiancommerce.com",
+        "areaServed": "Worldwide"
+      }]
+    }
+    `}
+  </script>
+
+  {/* ⭐⭐⭐ WEBSITE SCHEMA ⭐⭐⭐ */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Companian Commerce Agency",
+      "url": "https://www.companiancommerce.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.companiancommerce.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    `}
+  </script>
+</Helmet>
+
+
+
+
+
 
       <div className="hero-section">
         <video autoPlay muted loop playsInline className="bg-video">

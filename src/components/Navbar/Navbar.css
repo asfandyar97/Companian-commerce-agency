@@ -1,3 +1,55 @@
+/* === Top Contact Bar === */
+.top-contact-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d4af37; /* brand gold */
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 50px;
+  font-weight: 500;
+}
+
+.top-contact-bar .left-contact,
+.top-contact-bar .right-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-contact-bar .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top-contact-bar .contact-item a {
+  color: #fff; /* visible on gold background */
+  text-decoration: none;
+}
+
+.top-contact-bar .contact-item a:hover {
+  color: #333; /* hover contrast */
+  text-decoration: underline;
+}
+
+/* === Mobile Responsive Top Bar === */
+@media (max-width: 768px) {
+  .top-contact-bar {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+
+  .top-contact-bar .left-contact,
+  .top-contact-bar .right-contact {
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+  }
+}
+
 /* === Main Navbar === */
 .navbar {
   display: flex;
@@ -22,7 +74,7 @@
   background-color: white;
   color: #333;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 0; /* remove any internal spacing */
+  padding: 0; 
 }
 
 /* === Logo === */
@@ -56,9 +108,7 @@
   max-width: 60%;
 }
 
-.navbar-menu li {
-  position: relative;
-}
+.navbar-menu li { position: relative; }
 
 .navbar-menu a {
   padding: 10px 18px;
@@ -92,21 +142,11 @@
   opacity: 1;
 }
 
-.navbar-menu a.active {
-  color: #d4af37;
-}
+.navbar-menu a.active { color: #d4af37; }
+.navbar-menu a:hover { transform: translateY(-2px); }
 
-.navbar-menu a:hover {
-  transform: translateY(-2px);
-}
-
-/* === Navbar Menu Text Colors === */
-.default-navbar .navbar-menu a {
-  color: #333;
-}
-.default-navbar .navbar-menu a.active {
-  color: #d4af37;
-}
+.default-navbar .navbar-menu a { color: #333; }
+.default-navbar .navbar-menu a.active { color: #d4af37; }
 
 /* === Desktop Contact Button === */
 .contact-link {
@@ -126,12 +166,11 @@
   font-weight: 600;
   border-radius: 30px;
   text-decoration: none;
-  transition: all 0.3s ease, transform 0.3s ease;
   display: flex;
   align-items: center;
   height: 40px;
+  transition: all 0.3s ease, transform 0.3s ease;
 }
-
 .contact-link a:hover {
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 6px 12px rgba(224, 127, 0, 0.3);
@@ -148,9 +187,7 @@
 }
 
 /* === Mobile Contact Link (hidden by default) === */
-.mobile-contact-link {
-  display: none;
-}
+.mobile-contact-link { display: none; }
 
 /* === Mobile Responsive Menu === */
 @media (max-width: 768px) {
@@ -162,7 +199,6 @@
     z-index: 1000;
   }
 
-  /* Mobile Logo — FIXED */
   .default-navbar .logo {
     position: relative;
     display: flex;
@@ -175,20 +211,14 @@
   }
 
   .default-navbar .logo img {
-    height: 150px; /* keep large but balanced */
+    height: 150px; 
     width: auto;
     margin: 0;
     display: block;
   }
 
-  /* Remove white gap above and below navbar completely */
-  .default-navbar {
-    padding: 0;
-    margin: 0;
-    border: none;
-  }
+  .default-navbar { padding: 0; margin: 0; border: none; }
 
-  /* Hamburger button */
   .menu-toggle {
     display: block;
     font-size: 28px;
@@ -220,7 +250,6 @@
     opacity: 0;
     transition: all 0.4s ease;
     overflow-y: auto;
-    overscroll-behavior: contain;
     text-align: center;
   }
 
@@ -257,13 +286,8 @@
     transform: translateY(-2px);
   }
 
-  .contact-link {
-    display: none;
-  }
-
-  .mobile-contact-link {
-    display: block;
-  }
+  .contact-link { display: none; }
+  .mobile-contact-link { display: block; }
 }
 
 /* === Smooth transition on scroll/logo/menu === */

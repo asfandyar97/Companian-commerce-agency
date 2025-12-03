@@ -92,30 +92,72 @@ const tiktokServices = [
 const TiktokShop = () => {
   return (
     <div className="services-wrapper">
-      <Helmet>
-        {/* ✅ SEO Optimized Helmet for Companian Commerce Agency */}
-        <title>TikTok Shop Services | Companian Commerce Agency</title>
-        <meta
-          name="description"
-          content="Grow your TikTok Shop with viral-optimized listings, SEO, TikTok ads, influencer marketing, and order automation powered by Companian Commerce Agency."
-        />
+     <Helmet>
+      {/* Page Title */}
+      <title>TikTok Shop Services | Companian Commerce Agency | Listings, Ads & Influencers</title>
 
-        {/* ✅ Canonical tag (important for indexing) */}
-        <link rel="canonical" href="https://companiancommerce.com/tiktokshop" />
+      {/* Meta Description */}
+      <meta
+        name="description"
+        content="Optimize your TikTok Shop with SEO listings, viral content strategy, influencer marketing, TikTok ads & automated order management from Companian Commerce Agency."
+      />
 
-        {/* ✅ Open Graph / Social Meta */}
-        <meta property="og:title" content="TikTok Shop Services | Companian Commerce Agency" />
-        <meta
-          property="og:description"
-          content="TikTok Shop listing optimization, influencer campaigns, ads, SEO, analytics, and automated order sync — powered by Companian Commerce Agency."
-        />
-        <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
-        <meta property="og:url" content="https://companiancommerce.com/tiktokshop" />
-        <meta property="og:type" content="website" />
+      {/* Canonical & Robots */}
+      <link rel="canonical" href="https://www.companiancommerce.com/tiktokshop" />
+      <meta name="robots" content="index, follow" />
 
-        {/* ✅ Robots for crawl */}
-        <meta name="robots" content="index, follow" />
-      </Helmet>
+      {/* Open Graph / Social Media */}
+      <meta property="og:title" content="TikTok Shop Services — Companian Commerce Agency" />
+      <meta
+        property="og:description"
+        content="TikTok Shop listing SEO, ads management, creators/influencers, product content & analytics support to grow your store fast."
+      />
+      <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
+      <meta property="og:url" content="https://www.companiancommerce.com/tiktokshop" />
+      <meta property="og:type" content="website" />
+
+      {/* Facebook & LinkedIn */}
+      <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
+      <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
+
+      {/* ⭐ Breadcrumb Schema ⭐ */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.companiancommerce.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "TikTok Shop Services",
+              "item": "https://www.companiancommerce.com/tiktokshop"
+            }
+          ]
+        }
+        `}
+      </script>
+
+      {/* ⭐ WebPage Schema ⭐ */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "TikTok Shop Services | Companian Commerce Agency",
+          "url": "https://www.companiancommerce.com/tiktokshop",
+          "description": "Optimize your TikTok Shop with SEO listings, viral content strategy, influencer marketing, TikTok ads & automated order management from Companian Commerce Agency."
+        }
+        `}
+      </script>
+    </Helmet>
+
 
       <div className="services-container">
         <h2 className="services-title">TikTok Shop Services</h2>

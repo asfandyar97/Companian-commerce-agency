@@ -92,26 +92,78 @@ const shopifyServices = [
 const Shopify = () => {
   return (
     <div className="services-wrapper">
-      <Helmet>
-        <title>Shopify Services | Companian Commerce Agency</title>
-        <meta
-          name="description"
-          content="Professional Shopify store creation, customization, SEO, apps setup, payment & shipping integration, and long-term eCommerce growth support."
-        />
-        <meta
-          property="og:title"
-          content="Shopify Services | Companian Commerce Agency"
-        />
-        <meta
-          property="og:description"
-          content="Expert Shopify services including custom store setup, theme design, SEO, app integration, checkout setup, and ongoing growth strategy manage your store with Companian Commerce Agency."
-        />
-        <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
-        <meta property="og:type" content="website" />
-        <meta name="robots" content="index, follow" />
+    <Helmet>
+      {/* Page Title */}
+      <title>Shopify Services | Companian Commerce Agency | Custom Store Setup & SEO</title>
 
-        <link rel="canonical" href="https://companiancommerce.com/shopify" />
-      </Helmet>
+      {/* Meta Description */}
+      <meta
+        name="description"
+        content="Get expert Shopify store creation, custom theme design, SEO optimization, app setup, shipping & payment integration and long-term eCommerce support."
+      />
+
+      {/* Canonical & Robots */}
+      <link rel="canonical" href="https://www.companiancommerce.com/shopify" />
+      <meta name="robots" content="index, follow" />
+
+      {/* Open Graph / Social Media */}
+      <meta property="og:title" content="Shopify Services — Companian Commerce Agency" />
+      <meta
+        property="og:description"
+        content="Shopify theme customization, SEO, apps integration, checkout setup, product listings and full Shopify store management."
+      />
+      <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
+      <meta property="og:url" content="https://www.companiancommerce.com/shopify" />
+      <meta property="og:type" content="website" />
+
+      {/* Facebook & LinkedIn */}
+      <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
+      <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
+
+      {/* Keywords */}
+      <meta
+        name="keywords"
+        content="Shopify services, Shopify experts, custom Shopify store, Shopify SEO, Shopify app setup"
+      />
+
+      {/* ⭐ Breadcrumb Schema ⭐ */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.companiancommerce.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Services",
+              "item": "https://www.companiancommerce.com/shopify"
+            }
+          ]
+        }
+        `}
+      </script>
+
+      {/* ⭐ WebPage Schema ⭐ */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Shopify Services | Companian Commerce Agency",
+          "url": "https://www.companiancommerce.com/shopify",
+          "description": "Get expert Shopify store creation, custom theme design, SEO optimization, app setup, shipping & payment integration and long-term eCommerce support."
+        }
+        `}
+      </script>
+    </Helmet>
+
 
 
       <div className="services-container">

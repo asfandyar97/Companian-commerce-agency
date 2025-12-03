@@ -72,34 +72,83 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      <Helmet>
-        <title>Contact Us | Companian Commerce Agency</title>
+       <Helmet>
+      {/* Page Title */}
+      <title>Contact Us | Companian Commerce Agency | Talk to Our eCommerce Experts</title>
 
-        <meta
-          name="description"
-          content="Contact Companian Commerce Agency for expert eCommerce services across Amazon, Shopify, eBay, and TikTok Shop. We help brands scale with professional marketplace management and growth strategies."
-        />
+      {/* Meta Description */}
+      <meta
+        name="description"
+        content="Contact Companian Commerce Agency for Amazon, Shopify, eBay & TikTok Shop services. Talk to our expert team for marketplace growth and professional brand scaling."
+      />
 
-        <link rel="canonical" href="https://www.companiancommerce.com/contact" />
+      {/* Canonical & Robots */}
+      <link rel="canonical" href="https://www.companiancommerce.com/contact" />
+      <meta name="robots" content="index, follow" />
 
-        {/* Open Graph */}
-        <meta property="og:title" content="Contact Companian Commerce Agency" />
-        <meta
-          property="og:description"
-          content="Get in touch with Companian Commerce Agency for Amazon, eBay, Shopify, and TikTok Shop services, support, and business partnerships."
-        />
-        <meta property="og:image" content="https://www.companiancommerce.com/contact-og.jpg" />
-        <meta property="og:url" content="https://www.companiancommerce.com/contact" />
-        <meta property="og:type" content="website" />
+      {/* Open Graph / Social Media */}
+      <meta property="og:title" content="Contact Companian Commerce Agency" />
+      <meta
+        property="og:description"
+        content="Reach out to Companian Commerce Agency for eCommerce services, account support and partnership opportunities."
+      />
+      <meta property="og:image" content="https://www.companiancommerce.com/contact-og.jpg" />
+      <meta property="og:url" content="https://www.companiancommerce.com/contact" />
+      <meta property="og:type" content="website" />
 
-        <meta name="robots" content="index, follow" />
+      {/* Facebook & LinkedIn */}
+      <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
+      <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
 
-        {/* Keywords */}
-        <meta
-          name="keywords"
-          content="Companian Commerce contact, Amazon agency contact, Shopify experts contact, TikTok Shop agency support, eBay seller services contact"
-        />
-      </Helmet>
+      {/* Contact Info */}
+      <meta name="contact:email" content="info@companiancommerce.com" />
+      <meta name="contact:phone_number" content="+923155513063" />
+
+      {/* Keywords */}
+      <meta
+        name="keywords"
+        content="Companian Commerce contact, Amazon agency contact, Shopify support, TikTok Shop agency, eBay services contact"
+      />
+
+      {/* ⭐ Breadcrumb Schema ⭐ */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.companiancommerce.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact",
+              "item": "https://www.companiancommerce.com/contact"
+            }
+          ]
+        }
+        `}
+      </script>
+
+      {/* ⭐ WebPage Schema ⭐ */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Contact Companian Commerce Agency",
+          "url": "https://www.companiancommerce.com/contact",
+          "description": "Contact Companian Commerce Agency for Amazon, Shopify, eBay & TikTok Shop services. Talk to our expert team for marketplace growth and professional brand scaling."
+        }
+        `}
+      </script>
+    </Helmet>
+
+
 
 
       <div className="left-panel">

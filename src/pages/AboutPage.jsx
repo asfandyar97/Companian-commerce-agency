@@ -14,36 +14,80 @@ const AboutPage = () => {
 
   return (
     <div className="about-page">
-    <Helmet>
-  <title>About Us | Companian Commerce Agency</title>
+ <Helmet>
+      {/* Page Title */}
+      <title>About Companian Commerce Agency | Amazon, Shopify, eBay & TikTok Shop Experts</title>
 
-  <meta
-    name="description"
-    content="Learn about Companian Commerce Agency expert eCommerce team helping brands scale on Amazon, eBay, Shopify, and TikTok Shop through advanced seller services, PPC marketing, and catalog optimization."
-  />
+      {/* Meta Description */}
+      <meta
+        name="description"
+        content="Companian Commerce Agency is a professional eCommerce management team helping brands grow on Amazon, Shopify, eBay, and TikTok Shop through PPC, listing optimization, branding & full account management."
+      />
 
-  <link rel="canonical" href="https://www.companiancommerce.com/about" />
+      {/* Canonical & Robots */}
+      <link rel="canonical" href="https://www.companiancommerce.com/about" />
+      <meta name="robots" content="index, follow" />
 
-  {/* Open Graph */}
-  <meta property="og:title" content="About Companian Commerce Agency" />
-  <meta
-    property="og:description"
-    content="Meet the expert team behind Companian Commerce dedicated to scaling Amazon, eBay, Shopify & TikTok Shop brands."
-  />
-  <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:url" content="https://www.companiancommerce.com/about" />
-  <meta property="og:type" content="website" />
+      {/* Open Graph / Social Media */}
+      <meta property="og:title" content="About Companian Commerce Agency" />
+      <meta
+        property="og:description"
+        content="Meet the expert eCommerce team behind Companian Commerce Agency helping global brands scale across Amazon, Shopify, eBay & TikTok Shop."
+      />
+      <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
+      <meta property="og:url" content="https://www.companiancommerce.com/about" />
+      <meta property="og:type" content="website" />
 
-  <meta name="robots" content="index, follow" />
+      {/* Facebook & LinkedIn */}
+      <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
+      <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
 
-  {/* Keywords */}
-  <meta
-    name="keywords"
-    content="Companian Commerce, About Companian Commerce Agency, Amazon management team, eCommerce experts, Shopify specialists, TikTok Shop agency, eBay account management team"
-  />
-</Helmet>
+      {/* Keywords */}
+      <meta
+        name="keywords"
+        content="Companian Commerce Agency, eCommerce experts, Amazon specialists, Shopify experts, eBay management team, TikTok Shop agency"
+      />
+
+      {/* ⭐ Breadcrumb Schema ⭐ */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.companiancommerce.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About",
+              "item": "https://www.companiancommerce.com/about"
+            }
+          ]
+        }
+        `}
+      </script>
+
+      {/* ⭐ WebPage Schema ⭐ */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "About Companian Commerce Agency",
+          "url": "https://www.companiancommerce.com/about",
+          "description": "Companian Commerce Agency is a professional eCommerce management team helping brands grow on Amazon, Shopify, eBay, and TikTok Shop."
+        }
+        `}
+      </script>
+    </Helmet>
+
+
+
 
 
 

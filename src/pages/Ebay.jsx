@@ -92,26 +92,78 @@ const ebayServices = [
 const Ebay = () => {
   return (
     <div className="services-wrapper">
-      <Helmet>
-        <title>eBay Services | Companian Commerce Agency</title>
-        <meta
-          name="description"
-          content="Grow your eBay store with professional eBay listing optimization, branded store setup, SEO, keyword research, advertising campaigns, and analytics support."
-        />
-        <meta
-          property="og:title"
-          content="eBay Services | Companian Commerce Agency"
-        />
-        <meta
-          property="og:description"
-          content="Expert eBay management including listing optimization, store design, SEO, PPC ads, keyword targeting, and analytics scale your eBay business with Companian Commerce Agency."
-        />
-        <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
-        <meta property="og:type" content="website" />
-        <meta name="robots" content="index, follow" />
+     <Helmet>
+      {/* Page Title */}
+      <title>eBay Services | Companian Commerce Agency | Listing SEO & Store Management</title>
 
-        <link rel="canonical" href="https://companiancommerce.com/ebay" />
-      </Helmet>
+      {/* Meta Description */}
+      <meta
+        name="description"
+        content="Professional eBay services including listing SEO, store design, keyword research, PPC ads, optimization, competitor analysis & complete eBay store management."
+      />
+
+      {/* Canonical & Robots */}
+      <link rel="canonical" href="https://www.companiancommerce.com/ebay" />
+      <meta name="robots" content="index, follow" />
+
+      {/* Open Graph / Social Media */}
+      <meta property="og:title" content="eBay Services — Companian Commerce Agency" />
+      <meta
+        property="og:description"
+        content="eBay listing optimization, store branding, SEO, product ranking, ads management & analytics — grow your eBay business professionally."
+      />
+      <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
+      <meta property="og:url" content="https://www.companiancommerce.com/ebay" />
+      <meta property="og:type" content="website" />
+
+      {/* Facebook & LinkedIn */}
+      <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
+      <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
+
+      {/* Keywords */}
+      <meta
+        name="keywords"
+        content="eBay services, eBay SEO, eBay listing optimization, eBay store management, eBay PPC ads"
+      />
+
+      {/* ⭐ Breadcrumb Schema ⭐ */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.companiancommerce.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "eBay Services",
+              "item": "https://www.companiancommerce.com/ebay"
+            }
+          ]
+        }
+        `}
+      </script>
+
+      {/* ⭐ WebPage Schema ⭐ */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "eBay Services | Companian Commerce Agency",
+          "url": "https://www.companiancommerce.com/ebay",
+          "description": "Professional eBay services including listing SEO, store design, keyword research, PPC ads, optimization, competitor analysis & complete eBay store management."
+        }
+        `}
+      </script>
+    </Helmet>
+
 
 
       <div className="services-container">

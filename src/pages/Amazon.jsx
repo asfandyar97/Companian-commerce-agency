@@ -101,26 +101,78 @@ const Amazon = () => {
   return (
     <div className="services-wrapper">
       {/* ✅ Helmet SEO Block */}
-      <Helmet>
-        <title>Amazon Services | Companian Commerce Agency</title>
-        <meta
-          name="description"
-          content="Grow your Amazon business with expert listing optimization, PPC campaigns, A+ content, product ranking, FBA support, and complete account management."
-        />
-        <meta
-          property="og:title"
-          content="Amazon Services | Companian Commerce Agency"
-        />
-        <meta
-          property="og:description"
-          content="Amazon listing optimization, PPC management, FBA support, product launches, SEO & brand registry services to scale your Amazon store with Companian Commerce."
-        />
-        <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
-        <meta property="og:type" content="website" />
-        <meta name="robots" content="index, follow" />
+   <Helmet>
+      {/* Page Title */}
+      <title>Amazon Services | Companian Commerce Agency | FBA, PPC & Listing Optimization</title>
 
-        <link rel="canonical" href="https://companiancommerce.com/amazon" />
-      </Helmet>
+      {/* Meta Description */}
+      <meta
+        name="description"
+        content="Boost your Amazon store with expert listing optimization, PPC campaigns, A+ content, SEO, product ranking, FBA support, and full Amazon account management from Companian Commerce Agency."
+      />
+
+      {/* Canonical & Robots */}
+      <link rel="canonical" href="https://www.companiancommerce.com/amazon" />
+      <meta name="robots" content="index, follow" />
+
+      {/* Open Graph / Social Media */}
+      <meta property="og:title" content="Amazon Services — Companian Commerce Agency" />
+      <meta
+        property="og:description"
+        content="Amazon listing optimization, PPC management, SEO, product launches, A+ content, inventory & FBA management — grow your Amazon business with professionals."
+      />
+      <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
+      <meta property="og:url" content="https://www.companiancommerce.com/amazon" />
+      <meta property="og:type" content="website" />
+
+      {/* Facebook & LinkedIn */}
+      <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
+      <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
+
+      {/* Keywords */}
+      <meta
+        name="keywords"
+        content="Amazon services, Amazon PPC, Amazon FBA support, listing optimization, A+ content, Amazon SEO, Amazon account management"
+      />
+
+      {/* ⭐ Breadcrumb Schema ⭐ */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.companiancommerce.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Amazon Services",
+              "item": "https://www.companiancommerce.com/amazon"
+            }
+          ]
+        }
+        `}
+      </script>
+
+      {/* ⭐ WebPage Schema ⭐ */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Amazon Services | Companian Commerce Agency",
+          "url": "https://www.companiancommerce.com/amazon",
+          "description": "Boost your Amazon store with expert listing optimization, PPC campaigns, A+ content, SEO, product ranking, FBA support, and full Amazon account management from Companian Commerce Agency."
+        }
+        `}
+      </script>
+    </Helmet>
+
 
       <div className="services-container">
         <h2 className="services-title">Amazon Services</h2>

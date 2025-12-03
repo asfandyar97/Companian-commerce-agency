@@ -6,64 +6,32 @@
 
     <title>Companian Commerce Agency | Amazon, eBay, Shopify & TikTok Experts</title>
 
-    <!-- ✅ Favicon Setup -->
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-<link rel="manifest" href="/manifest.json" />
-<meta name="theme-color" content="#ffffff" />
-
+    <!-- ✅ Favicon & Manifest -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- ✅ Canonical & Sitemap -->
     <link rel="canonical" href="https://companiancommerce.com/" />
     <link rel="sitemap" type="application/xml" href="https://companiancommerce.com/sitemap.xml" />
 
-    <!-- ✅ SEO Meta Tags (Home Page default) -->
-    <meta
-      name="description"
-      content="Companian Commerce Agency — Your trusted partner for Amazon, eBay, Shopify, and TikTok Shop services. We provide expert eCommerce management, optimization, and growth solutions to help your brand succeed online."
-    />
-    <meta
-      name="keywords"
-      content="Companian Commerce, eCommerce agency, Amazon services, eBay management, Shopify experts, TikTok Shop solutions, online store growth"
-    />
+    <!-- ✅ SEO Meta Tags -->
+    <meta name="description" content="Companian Commerce Agency — Trusted partner for Amazon, eBay, Shopify & TikTok Shop. Expert eCommerce management, optimization, and growth solutions to boost your online brand." />
     <meta name="author" content="Companian Commerce Agency" />
     <meta name="robots" content="index, follow" />
 
-    <!-- ✅ Open Graph (for social sharing) -->
+    <!-- ✅ Open Graph (Social Sharing) -->
     <meta property="og:title" content="Companian Commerce Agency | Amazon, eBay, Shopify & TikTok Experts" />
-    <meta
-      property="og:description"
-      content="Companian Commerce Agency — Professional eCommerce services for Amazon, eBay, Shopify & TikTok Shop. Grow your brand with expert management and optimization."
-    />
-    <meta property="og:image" content="https://companiancommerce.com/favicon.png" />
+    <meta property="og:description" content="Professional eCommerce services for Amazon, eBay, Shopify & TikTok Shop. Grow your brand with expert management & optimization." />
+    <meta property="og:image" content="https://companiancommerce.com/logo-new.png" />
     <meta property="og:url" content="https://companiancommerce.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Companian Commerce Agency" />
 
-    <!-- ✅ Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Companian Commerce Agency | Amazon, eBay, Shopify & TikTok Experts" />
-    <meta
-      name="twitter:description"
-      content="Companian Commerce Agency — Your trusted partner for eCommerce success across Amazon, eBay, Shopify, and TikTok Shop."
-    />
-    <meta name="twitter:image" content="https://companiancommerce.com/favicon.png" />
-
-    <!-- ✅ JSON-LD Organization Schema -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Companian Commerce Agency",
-        "url": "https://companiancommerce.com",
-        "logo": "https://companiancommerce.com/favicon.png",
-        "sameAs": [
-          "https://www.facebook.com/companiancommerce",
-          "https://www.instagram.com/companiancommerce",
-          "https://www.linkedin.com/company/companiancommerce"
-        ]
-      }
-    </script>
+    <!-- ✅ Preconnect for faster font/script loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 
     <!-- ✅ Font Awesome -->
     <link
@@ -71,12 +39,110 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       crossorigin="anonymous"
     />
+
+    <!-- ✅ JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://companiancommerce.com/#organization",
+          "name": "Companian Commerce Agency",
+          "url": "https://companiancommerce.com",
+          "logo": "https://companiancommerce.com/logo-new.png",
+          "sameAs": [
+            "https://www.facebook.com/companiancommerce",
+            "https://www.facebook.com/share/14UF1Vx9iZu/",
+            "https://www.linkedin.com/company/companian-commerce-agency/"
+          ],
+          "email": "info@companiancommerce.com"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://companiancommerce.com/#website",
+          "url": "https://companiancommerce.com",
+          "name": "Companian Commerce Agency",
+          "publisher": {
+            "@id": "https://companiancommerce.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://companiancommerce.com/#homepage",
+          "url": "https://companiancommerce.com/",
+          "name": "Companian Commerce – eCommerce Growth Agency",
+          "isPartOf": {
+            "@id": "https://companiancommerce.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://companiancommerce.com/logo-new.png"
+          },
+          "description": "Professional eCommerce management & marketing services for Amazon, eBay, Shopify and TikTok Shop.",
+          "breadcrumb": {
+            "@id": "https://companiancommerce.com/#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://companiancommerce.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://companiancommerce.com/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://companiancommerce.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What services does Companian Commerce offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We provide complete eCommerce solutions including Amazon account management, Shopify store setup, eBay optimization, TikTok Shop onboarding, PPC advertising, catalog management, and brand growth strategy."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I contact Companian Commerce?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can contact us via email at info@companiancommerce.com or by filling out the contact form on our Contact page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which marketplaces do you manage?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We manage Amazon, Shopify, eBay, and TikTok Shop accounts for our clients."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you help me grow my online sales?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our team specializes in optimizing product listings, managing ads, and improving conversion rates to increase your online sales."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
 
-    <!-- ✅ Scripts -->
+    <!-- ✅ Main React Script -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

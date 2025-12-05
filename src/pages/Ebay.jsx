@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './ebay.css'; // Reuse Amazon styles
+import './Ebay.css';
+
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import {

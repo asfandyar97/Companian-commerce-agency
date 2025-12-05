@@ -33,69 +33,34 @@ const Navbar = () => {
 
       {/* === Main Navbar === */}
       <nav className="navbar default-navbar">
+        {/* Logo */}
         <div className="logo">
-          <img src="/logo-new.png" alt="Companian Commerce Agency" />
+          <NavLink to="/" onClick={closeMenu}>
+            <img src="/logo-new.png" alt="Companian Commerce Agency" />
+          </NavLink>
         </div>
 
+        {/* Mobile toggle */}
         <div className="menu-toggle" onClick={toggleMenu}>
           &#9776;
         </div>
 
+        {/* Navbar links */}
         <ul className={`navbar-menu ${menuOpen ? "show-menu" : ""}`}>
-          <li>
-            <NavLink
-              to="/"
-              onClick={closeMenu}
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/about"
-              onClick={closeMenu}
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/amazon"
-              onClick={closeMenu}
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              Amazon
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/ebay"
-              onClick={closeMenu}
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              EBay
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/shopify"
-              onClick={closeMenu}
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              Shopify
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/tiktokshop"
-              onClick={closeMenu}
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              TikTok Shop
-            </NavLink>
-          </li>
+          {["/", "/about", "/amazon", "/ebay", "/shopify", "/tiktokshop"].map((path, i) => {
+            const labels = ["Home", "About", "Amazon", "eBay", "Shopify", "TikTok Shop"];
+            return (
+              <li key={i}>
+                <NavLink
+                  to={path}
+                  onClick={closeMenu}
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                >
+                  {labels[i]}
+                </NavLink>
+              </li>
+            );
+          })}
           <li className="mobile-contact-link">
             <NavLink
               to="/contact"
@@ -107,6 +72,7 @@ const Navbar = () => {
           </li>
         </ul>
 
+        {/* Desktop contact button */}
         <div className="contact-link">
           <NavLink
             to="/contact"

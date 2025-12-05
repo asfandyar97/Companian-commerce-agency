@@ -16,25 +16,29 @@ import ScrollToTop from "./components/Scrolltotop"; // ✅ matches file name
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
+
 const App = () => {
   useAnalytics(); // ✅ Google Analytics tracker
 
   return (
     <HelmetProvider> {/* ✅ Wrap entire app */}
-      <ScrollToTop /> {/* ✅ Scroll restore */}
-      <Navbar />
+      
+        <ScrollToTop /> {/* ✅ Scroll restore */}
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/amazon" element={<Amazon />} />
-        <Route path="/ebay" element={<Ebay />} />
-        <Route path="/shopify" element={<Shopify />} />
-        <Route path="/tiktokshop" element={<TikTokShop />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/amazon" element={<Amazon />} />
+          <Route path="/ebay" element={<Ebay />} />
+          <Route path="/shopify" element={<Shopify />} />
+          <Route path="/tiktokshop" element={<TikTokShop />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
 
-      <Footer />
+        <Footer />
+      
     </HelmetProvider>
   );
 };

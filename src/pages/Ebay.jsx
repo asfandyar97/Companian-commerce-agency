@@ -1,5 +1,5 @@
-import React from 'react';
-import './Amazon.css'; // Reuse Amazon styles
+import React, { useState } from 'react';
+import './ebay.css'; // Reuse Amazon styles
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import {
@@ -89,46 +89,81 @@ const ebayServices = [
   },
 ];
 
+const faqs = [
+  {
+    question: "How does Companian Commerce optimize eBay listings?",
+    answer:
+      "We enhance eBay listings with optimized titles, descriptions, backend keywords, and high-quality images to improve visibility, conversions, and alignment with buyer search behavior.",
+  },
+  {
+    question: "What strategies are used for eBay SEO?",
+    answer:
+      "Our SEO strategy includes keyword research, optimized titles and descriptions, detailed item specifics, and structured data to ensure listings rank higher on eBay search results.",
+  },
+  {
+    question: "How can eBay Store Design & Branding benefit my business?",
+    answer:
+      "We create a professional, branded storefront with banners, category layouts, and cohesive branding to build trust, encourage repeat buyers, and increase customer engagement.",
+  },
+  {
+    question: "How does keyword targeting work on eBay?",
+    answer:
+      "We conduct targeted keyword research based on eBay’s algorithm, competitor analysis, and buyer behavior to increase visibility, attract relevant traffic, and drive more sales.",
+  },
+  {
+    question: "What kind of campaigns and promotions do you manage?",
+    answer:
+      "We manage promotional tools including time-limited offers, coupons, markdowns, and promoted listings to boost traffic, increase sales, and maximize ROI.",
+  },
+  {
+    question: "How is inventory and order management handled?",
+    answer:
+      "We streamline stock management and order fulfillment to reduce delays, prevent overselling, and ensure a smooth buyer experience with accurate real-time inventory tracking.",
+  },
+  {
+    question: "How do you manage eBay ads and performance reporting?",
+    answer:
+      "We set up and optimize promoted listings, track performance with analytics, and adjust campaigns for better reach, higher click-through rates, and improved ROI.",
+  },
+  {
+    question: "How do you use analytics to improve eBay store performance?",
+    answer:
+      "We track store and listing metrics such as impressions, clicks, sales, and buyer behavior to provide insights and implement data-driven improvements for sustained growth.",
+  },
+];
+
 const Ebay = () => {
+  const [leftActive, setLeftActive] = useState(null);
+  const [rightActive, setRightActive] = useState(null);
+
   return (
     <div className="services-wrapper">
-     <Helmet>
-      {/* Page Title */}
-      <title>eBay Services | Companian Commerce Agency | Listing SEO & Store Management</title>
+      {/* ===== Helmet & SEO ===== */}
+      <Helmet>
+        <title>eBay Services | Companian Commerce Agency | Listing SEO & Store Management</title>
+        <meta
+          name="description"
+          content="Professional eBay services including listing SEO, store design, keyword research, PPC ads, optimization, competitor analysis & complete eBay store management."
+        />
+        <link rel="canonical" href="https://www.companiancommerce.com/ebay" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="eBay Services — Companian Commerce Agency" />
+        <meta
+          property="og:description"
+          content="eBay listing optimization, store branding, SEO, product ranking, ads management & analytics — grow your eBay business professionally."
+        />
+        <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
+        <meta property="og:url" content="https://www.companiancommerce.com/ebay" />
+        <meta property="og:type" content="website" />
+        <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
+        <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
+        <meta
+          name="keywords"
+          content="eBay services, eBay SEO, eBay listing optimization, eBay store management, eBay PPC ads"
+        />
 
-      {/* Meta Description */}
-      <meta
-        name="description"
-        content="Professional eBay services including listing SEO, store design, keyword research, PPC ads, optimization, competitor analysis & complete eBay store management."
-      />
-
-      {/* Canonical & Robots */}
-      <link rel="canonical" href="https://www.companiancommerce.com/ebay" />
-      <meta name="robots" content="index, follow" />
-
-      {/* Open Graph / Social Media */}
-      <meta property="og:title" content="eBay Services — Companian Commerce Agency" />
-      <meta
-        property="og:description"
-        content="eBay listing optimization, store branding, SEO, product ranking, ads management & analytics — grow your eBay business professionally."
-      />
-      <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
-      <meta property="og:url" content="https://www.companiancommerce.com/ebay" />
-      <meta property="og:type" content="website" />
-
-      {/* Facebook & LinkedIn */}
-      <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
-      <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
-
-      {/* Keywords */}
-      <meta
-        name="keywords"
-        content="eBay services, eBay SEO, eBay listing optimization, eBay store management, eBay PPC ads"
-      />
-
-      {/* ⭐ Breadcrumb Schema ⭐ */}
-      <script type="application/ld+json">
-        {`
+        {/* Breadcrumb Schema */}
+        <script type="application/ld+json">{`
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
@@ -147,12 +182,10 @@ const Ebay = () => {
             }
           ]
         }
-        `}
-      </script>
+        `}</script>
 
-      {/* ⭐ WebPage Schema ⭐ */}
-      <script type="application/ld+json">
-        {`
+        {/* WebPage Schema */}
+        <script type="application/ld+json">{`
         {
           "@context": "https://schema.org",
           "@type": "WebPage",
@@ -160,22 +193,17 @@ const Ebay = () => {
           "url": "https://www.companiancommerce.com/ebay",
           "description": "Professional eBay services including listing SEO, store design, keyword research, PPC ads, optimization, competitor analysis & complete eBay store management."
         }
-        `}
-      </script>
-    </Helmet>
+        `}</script>
+      </Helmet>
 
-
-
+      {/* ===== Services Section ===== */}
       <div className="services-container">
         <h2 className="services-title">eBay Services</h2>
         {ebayServices.map((service, index) => (
           <motion.div
             key={service.id}
             className={`service-section ${index % 2 !== 0 ? 'reverse' : ''}`}
-            initial={{
-              opacity: 0,
-              x: index % 2 !== 0 ? 100 : -100,
-            }}
+            initial={{ opacity: 0, x: index % 2 !== 0 ? 100 : -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -202,6 +230,68 @@ const Ebay = () => {
             </div>
           </motion.div>
         ))}
+      </div>
+
+      {/* ===== FAQ Section ===== */}
+      <div className="faq-container">
+        <h2 className="faq-title">
+          Frequently Asked <span>Questions</span>
+        </h2>
+        <p className="faq-subtitle">
+          Get quick answers about how Companian Commerce helps brands grow faster on eBay.
+        </p>
+
+        <div className="faq-grid">
+          {/* Left Column */}
+          <div>
+            {faqs.slice(0, Math.ceil(faqs.length / 2)).map((faq, index) => (
+              <div
+                key={index}
+                className={`faq-item ${leftActive === index ? 'active' : ''}`}
+              >
+                <button
+                  className="faq-question"
+                  onClick={() =>
+                    setLeftActive(leftActive === index ? null : index)
+                  }
+                >
+                  {faq.question}
+                  <span className="faq-icon">
+                    {leftActive === index ? '−' : '+'}
+                  </span>
+                </button>
+                <div className="faq-answer">
+                  {leftActive === index && <p>{faq.answer}</p>}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Right Column */}
+          <div>
+            {faqs.slice(Math.ceil(faqs.length / 2)).map((faq, index) => (
+              <div
+                key={index}
+                className={`faq-item ${rightActive === index ? 'active' : ''}`}
+              >
+                <button
+                  className="faq-question"
+                  onClick={() =>
+                    setRightActive(rightActive === index ? null : index)
+                  }
+                >
+                  {faq.question}
+                  <span className="faq-icon">
+                    {rightActive === index ? '−' : '+'}
+                  </span>
+                </button>
+                <div className="faq-answer">
+                  {rightActive === index && <p>{faq.answer}</p>}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

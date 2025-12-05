@@ -343,7 +343,7 @@
 
 .process-image,
 .we-work-image {
-  flex: 1;
+  flex: 1 1 300px;
   max-width: 400px;
 }
 
@@ -355,11 +355,12 @@
 }
 
 .process-steps {
-  flex: 1;
+  flex: 1 1 300px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 20px;
   max-width: 500px;
+  justify-items: center;
 }
 
 .step {
@@ -371,6 +372,8 @@
   color: #000;
   font-weight: 600;
   transition: 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .step:hover {
@@ -379,6 +382,36 @@
   color: #000;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .process-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
 /* === Responsive === */
 @media (max-width: 768px) {
   .amazon-section,

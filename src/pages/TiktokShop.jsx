@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from "react";
 import './TiktokShop.css';
-import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet';
+import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import {
   FaListAlt,
   FaSearch,
@@ -12,6 +12,8 @@ import {
   FaSync,
   FaChartBar,
   FaCheckCircle,
+  FaPlus,
+  FaMinus
 } from 'react-icons/fa';
 
 const tiktokServices = [
@@ -89,10 +91,52 @@ const tiktokServices = [
   },
 ];
 
+// ---------------- FAQ DATA FOR TIKTOK SHOP ----------------
+const tiktokFaqsLeft = [
+  {
+    q: "How long does it take to optimize a TikTok Shop listing?",
+    a: "Typically 2–5 days depending on product count, media assets, and SEO optimization requirements.",
+  },
+  {
+    q: "Do you create TikTok-friendly product content?",
+    a: "Yes, all product descriptions, titles, and visuals are tailored for TikTok’s mobile-first, scroll-driven audience.",
+  },
+  {
+    q: "Can you run TikTok ad campaigns for my store?",
+    a: "Absolutely, we design and manage ads from creatives to targeting for maximum ROI.",
+  },
+  {
+    q: "Do you provide influencer marketing services?",
+    a: "Yes, we connect your brand with relevant TikTok influencers to boost engagement and sales.",
+  },
+];
+
+const tiktokFaqsRight = [
+  {
+    q: "Can you integrate real-time order syncing?",
+    a: "Yes, our system keeps inventory updated and tracks orders in real-time for smooth operations.",
+  },
+  {
+    q: "Do you provide performance reporting?",
+    a: "Yes, we provide detailed analytics for campaigns, sales, and audience engagement to drive informed decisions.",
+  },
+  {
+    q: "Will you manage Spark Ads campaigns?",
+    a: "Absolutely, we optimize your organic content and paid Spark Ads for better reach and conversions.",
+  },
+  {
+    q: "Do you offer long-term TikTok Shop support?",
+    a: "Yes, we provide ongoing management including updates, optimizations, and performance tracking.",
+  },
+];
+
 const TiktokShop = () => {
+  const [leftActive, setLeftActive] = useState(null);
+  const [rightActive, setRightActive] = useState(null);
+
   return (
     <div className="services-wrapper">
-     <Helmet>
+      <Helmet>
       {/* Page Title */}
       <title>TikTok Shop Services | Companian Commerce Agency | Listings, Ads & Influencers</title>
 
@@ -156,8 +200,8 @@ const TiktokShop = () => {
         }
         `}
       </script>
+      
     </Helmet>
-
 
       <div className="services-container">
         <h2 className="services-title">TikTok Shop Services</h2>
@@ -196,6 +240,55 @@ const TiktokShop = () => {
             </div>
           </motion.div>
         ))}
+      </div>
+
+      {/* -------------------- FAQ SECTION -------------------- */}
+      <div className="faq-container">
+        <h2 className="faq-main-title">Frequently Asked Questions</h2>
+
+        <div className="faq-grid">
+          {/* LEFT COLUMN */}
+          <div className="faq-column">
+            {tiktokFaqsLeft.map((item, index) => (
+              <div
+                key={index}
+                className={`faq-item ${leftActive === index ? "active" : ""}`}
+                onClick={() => setLeftActive(leftActive === index ? null : index)}
+              >
+                <div className="faq-question">
+                  {item.q}
+                  <span className="faq-icon">
+                    {leftActive === index ? <FaMinus /> : <FaPlus />}
+                  </span>
+                </div>
+                {leftActive === index && (
+                  <div className="faq-answer">{item.a}</div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* RIGHT COLUMN */}
+          <div className="faq-column">
+            {tiktokFaqsRight.map((item, index) => (
+              <div
+                key={index}
+                className={`faq-item ${rightActive === index ? "active" : ""}`}
+                onClick={() => setRightActive(rightActive === index ? null : index)}
+              >
+                <div className="faq-question">
+                  {item.q}
+                  <span className="faq-icon">
+                    {rightActive === index ? <FaMinus /> : <FaPlus />}
+                  </span>
+                </div>
+                {rightActive === index && (
+                  <div className="faq-answer">{item.a}</div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -113,10 +113,7 @@ const shopifyFaqsLeft = [
 ];
 
 const shopifyFaqsRight = [
-  {
-    q: "Can you integrate payment gateways?",
-    a: "Yes, we integrate debit/credit cards, PayPal, Stripe, COD (if available), and local gateways.",
-  },
+  
   {
     q: "Do you offer store maintenance?",
     a: "Yes, we offer monthly store updates, bug fixes, and performance monitoring.",
@@ -138,70 +135,59 @@ const Shopify = () => {
   return (
     <div className="services-wrapper">
       <Helmet>
-  {/* Page Title */}
+  {/* ✅ Page Title & Description */}
   <title>Shopify Services | Companian Commerce Agency | Store Setup, SEO & Marketing</title>
-
-  {/* Meta Description */}
   <meta
     name="description"
-    content="Professional Shopify store setup, theme customization, product SEO, app configuration, marketing, and long-term support from Companian Commerce Agency."
+    content="Grow your Shopify store with Companian Commerce Agency. Expert store setup, theme customization, product SEO, app configuration, marketing, and long-term support to increase sales and revenue."
   />
-
-  {/* Canonical & Robots */}
   <link rel="canonical" href="https://www.companiancommerce.com/shopify" />
   <meta name="robots" content="index, follow" />
 
-  {/* Open Graph / Social Media */}
+  {/* ✅ Open Graph / Social Sharing */}
   <meta property="og:title" content="Shopify Services — Companian Commerce Agency" />
   <meta
     property="og:description"
-    content="Shopify store setup, theme customization, SEO, app configuration, marketing & analytics to grow your online store efficiently."
+    content="Professional Shopify services including store setup, theme customization, product SEO, app configuration, marketing & analytics — grow your Shopify store today."
   />
   <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
   <meta property="og:url" content="https://www.companiancommerce.com/shopify" />
   <meta property="og:type" content="website" />
 
-  {/* Facebook & LinkedIn */}
+  {/* ✅ Publisher & Author */}
   <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
   <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
 
-  {/* ⭐ Breadcrumb Schema ⭐ */}
-  <script type="application/ld+json">
-    {`
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.companiancommerce.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Shopify Services",
-          "item": "https://www.companiancommerce.com/shopify"
-        }
-      ]
-    }
-    `}
-  </script>
+  {/* ✅ Keywords (Optional) */}
+  <meta
+    name="keywords"
+    content="Shopify services, Shopify store setup, Shopify SEO, theme customization, product optimization, app configuration, Shopify marketing"
+  />
 
-  {/* ⭐ WebPage Schema ⭐ */}
-  <script type="application/ld+json">
-    {`
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Shopify Services | Companian Commerce Agency",
-      "url": "https://www.companiancommerce.com/shopify",
-      "description": "Professional Shopify store setup, theme customization, product SEO, app configuration, marketing, and long-term support from Companian Commerce Agency."
-    }
-    `}
-  </script>
+  {/* ✅ Breadcrumb Schema */}
+  <script type="application/ld+json">{`
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem","position":1,"name":"Home","item":"https://www.companiancommerce.com/"},
+      {"@type": "ListItem","position":2,"name":"Shopify Services","item":"https://www.companiancommerce.com/shopify"}
+    ]
+  }
+  `}</script>
+
+  {/* ✅ WebPage Schema */}
+  <script type="application/ld+json">{`
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Shopify Services | Companian Commerce Agency",
+    "url": "https://www.companiancommerce.com/shopify",
+    "description": "Grow your Shopify store with expert store setup, theme customization, product SEO, app configuration, marketing, and long-term support from Companian Commerce Agency."
+  }
+  `}</script>
 </Helmet>
+
 
 
       {/* -------------------- SERVICES SECTION -------------------- */}

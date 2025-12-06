@@ -137,71 +137,59 @@ const TiktokShop = () => {
   return (
     <div className="services-wrapper">
       <Helmet>
-      {/* Page Title */}
-      <title>TikTok Shop Services | Companian Commerce Agency | Listings, Ads & Influencers</title>
+  {/* ✅ Page Title & Description */}
+  <title>TikTok Shop Services | Companian Commerce Agency | Listings, Ads & Influencers</title>
+  <meta
+    name="description"
+    content="Grow your TikTok Shop sales with Companian Commerce Agency. Expert SEO listings, viral content strategy, influencer marketing, TikTok ads, and automated order management to boost revenue."
+  />
+  <link rel="canonical" href="https://www.companiancommerce.com/tiktokshop" />
+  <meta name="robots" content="index, follow" />
 
-      {/* Meta Description */}
-      <meta
-        name="description"
-        content="Optimize your TikTok Shop with SEO listings, viral content strategy, influencer marketing, TikTok ads & automated order management from Companian Commerce Agency."
-      />
+  {/* ✅ Open Graph / Social Sharing */}
+  <meta property="og:title" content="TikTok Shop Services — Companian Commerce Agency" />
+  <meta
+    property="og:description"
+    content="Professional TikTok Shop services including SEO listings, influencer marketing, ads management, content optimization & analytics — grow your TikTok store today."
+  />
+  <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
+  <meta property="og:url" content="https://www.companiancommerce.com/tiktokshop" />
+  <meta property="og:type" content="website" />
 
-      {/* Canonical & Robots */}
-      <link rel="canonical" href="https://www.companiancommerce.com/tiktokshop" />
-      <meta name="robots" content="index, follow" />
+  {/* ✅ Publisher & Author */}
+  <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
+  <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
 
-      {/* Open Graph / Social Media */}
-      <meta property="og:title" content="TikTok Shop Services — Companian Commerce Agency" />
-      <meta
-        property="og:description"
-        content="TikTok Shop listing SEO, ads management, creators/influencers, product content & analytics support to grow your store fast."
-      />
-      <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
-      <meta property="og:url" content="https://www.companiancommerce.com/tiktokshop" />
-      <meta property="og:type" content="website" />
+  {/* ✅ Keywords (Optional) */}
+  <meta
+    name="keywords"
+    content="TikTok Shop services, TikTok SEO, TikTok influencer marketing, TikTok ads, TikTok content optimization, automated order management"
+  />
 
-      {/* Facebook & LinkedIn */}
-      <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
-      <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
+  {/* ✅ Breadcrumb Schema */}
+  <script type="application/ld+json">{`
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem","position":1,"name":"Home","item":"https://www.companiancommerce.com/"},
+      {"@type": "ListItem","position":2,"name":"TikTok Shop Services","item":"https://www.companiancommerce.com/tiktokshop"}
+    ]
+  }
+  `}</script>
 
-      {/* ⭐ Breadcrumb Schema ⭐ */}
-      <script type="application/ld+json">
-        {`
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://www.companiancommerce.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "TikTok Shop Services",
-              "item": "https://www.companiancommerce.com/tiktokshop"
-            }
-          ]
-        }
-        `}
-      </script>
+  {/* ✅ WebPage Schema */}
+  <script type="application/ld+json">{`
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "TikTok Shop Services | Companian Commerce Agency",
+    "url": "https://www.companiancommerce.com/tiktokshop",
+    "description": "Grow your TikTok Shop sales with expert SEO listings, viral content strategy, influencer marketing, TikTok ads & automated order management from Companian Commerce Agency."
+  }
+  `}</script>
+</Helmet>
 
-      {/* ⭐ WebPage Schema ⭐ */}
-      <script type="application/ld+json">
-        {`
-        {
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "TikTok Shop Services | Companian Commerce Agency",
-          "url": "https://www.companiancommerce.com/tiktokshop",
-          "description": "Optimize your TikTok Shop with SEO listings, viral content strategy, influencer marketing, TikTok ads & automated order management from Companian Commerce Agency."
-        }
-        `}
-      </script>
-      
-    </Helmet>
 
       <div className="services-container">
         <h2 className="services-title">TikTok Shop Services</h2>

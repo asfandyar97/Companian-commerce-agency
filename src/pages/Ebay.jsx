@@ -140,62 +140,59 @@ const Ebay = () => {
   return (
     <div className="services-wrapper">
       {/* ===== Helmet & SEO ===== */}
-      <Helmet>
-        <title>eBay Services | Companian Commerce Agency | Listing SEO & Store Management</title>
-        <meta
-          name="description"
-          content="Professional eBay services including listing SEO, store design, keyword research, PPC ads, optimization, competitor analysis & complete eBay store management."
-        />
-        <link rel="canonical" href="https://www.companiancommerce.com/ebay" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="eBay Services — Companian Commerce Agency" />
-        <meta
-          property="og:description"
-          content="eBay listing optimization, store branding, SEO, product ranking, ads management & analytics — grow your eBay business professionally."
-        />
-        <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
-        <meta property="og:url" content="https://www.companiancommerce.com/ebay" />
-        <meta property="og:type" content="website" />
-        <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
-        <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
-        <meta
-          name="keywords"
-          content="eBay services, eBay SEO, eBay listing optimization, eBay store management, eBay PPC ads"
-        />
+     <Helmet>
+  {/* ✅ Page Title & Description */}
+  <title>eBay Services | Companian Commerce Agency | Listing SEO & Store Management</title>
+  <meta
+    name="description"
+    content="Grow your eBay sales with Companian Commerce Agency. Expert eBay listing optimization, store design, keyword research, PPC ads, competitor analysis, and complete eBay store management services."
+  />
+  <link rel="canonical" href="https://www.companiancommerce.com/ebay" />
+  <meta name="robots" content="index, follow" />
 
-        {/* Breadcrumb Schema */}
-        <script type="application/ld+json">{`
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://www.companiancommerce.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "eBay Services",
-              "item": "https://www.companiancommerce.com/ebay"
-            }
-          ]
-        }
-        `}</script>
+  {/* ✅ Open Graph / Social Sharing */}
+  <meta property="og:title" content="eBay Services — Companian Commerce Agency" />
+  <meta
+    property="og:description"
+    content="Professional eBay services including listing SEO, store branding, keyword research, PPC ads, product optimization & full account management — grow your eBay business today."
+  />
+  <meta property="og:image" content="https://www.companiancommerce.com/images/about-og.png" />
+  <meta property="og:url" content="https://www.companiancommerce.com/ebay" />
+  <meta property="og:type" content="website" />
 
-        {/* WebPage Schema */}
-        <script type="application/ld+json">{`
-        {
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "eBay Services | Companian Commerce Agency",
-          "url": "https://www.companiancommerce.com/ebay",
-          "description": "Professional eBay services including listing SEO, store design, keyword research, PPC ads, optimization, competitor analysis & complete eBay store management."
-        }
-        `}</script>
-      </Helmet>
+  {/* ✅ Publisher & Author */}
+  <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
+  <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
+
+  {/* ✅ Keywords (Optional) */}
+  <meta
+    name="keywords"
+    content="eBay services, eBay SEO, eBay listing optimization, eBay store management, eBay PPC ads, eBay marketing, eBay product optimization"
+  />
+
+  {/* ✅ Breadcrumb Schema */}
+  <script type="application/ld+json">{`
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem","position":1,"name":"Home","item":"https://www.companiancommerce.com/"},
+      {"@type": "ListItem","position":2,"name":"eBay Services","item":"https://www.companiancommerce.com/ebay"}
+    ]
+  }
+  `}</script>
+
+  {/* ✅ WebPage Schema */}
+  <script type="application/ld+json">{`
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "eBay Services | Companian Commerce Agency",
+    "url": "https://www.companiancommerce.com/ebay",
+    "description": "Grow your eBay sales with expert listing optimization, store design, keyword research, PPC ads, competitor analysis & complete eBay store management from Companian Commerce Agency."
+  }
+  `}</script>
+</Helmet>
 
       {/* ===== Services Section ===== */}
       <div className="services-container">

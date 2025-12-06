@@ -101,19 +101,19 @@ const Home = () => {
     <div className="home-wrapper">
 <Helmet>
   {/* ✅ Page Title & Description */}
-  <title>Companian Commerce Agency | Amazon, Shopify, eBay & TikTok eCommerce Experts</title>
+  <title>Companian Commerce Agency | Amazon FBA, Shopify Experts, eBay & TikTok Shop Marketing Services</title>
   <meta
     name="description"
-    content="Professional eCommerce agency helping brands grow on Amazon, Shopify, eBay & TikTok Shop. Services include FBA support, PPC campaigns, product catalog optimization, and full marketplace management."
+    content="Companian Commerce Agency is a top-rated eCommerce agency helping brands grow on Amazon, Shopify, eBay, and TikTok Shop. Services include FBA support, product listing optimization, PPC campaigns, catalog management, and full marketplace marketing to boost sales and revenue."
   />
   <link rel="canonical" href="https://www.companiancommerce.com/" />
   <meta name="robots" content="index, follow" />
 
   {/* ✅ Open Graph / Social Sharing */}
-  <meta property="og:title" content="Companian Commerce Agency" />
+  <meta property="og:title" content="Companian Commerce Agency | Amazon FBA & Shopify Experts" />
   <meta
     property="og:description"
-    content="Grow your brand with our expert eCommerce team across Amazon, Shopify, eBay & TikTok Shop, offering FBA support, PPC marketing, and catalog optimization."
+    content="Boost your eCommerce sales with our expert Amazon FBA, Shopify, eBay, and TikTok Shop services including product listings, PPC campaigns, catalog optimization, and full marketplace management."
   />
   <meta property="og:image" content="https://www.companiancommerce.com/og-image.png" />
   <meta property="og:url" content="https://www.companiancommerce.com/" />
@@ -123,17 +123,17 @@ const Home = () => {
   <meta property="article:publisher" content="https://www.facebook.com/share/14UF1Vx9iZu/" />
   <meta property="article:author" content="https://www.linkedin.com/company/companian-commerce-agency/" />
 
-  {/* ✅ Optional Keywords */}
+  {/* ✅ Optional Keywords (Google ignore karta hai, lekin SEO-friendly for other engines) */}
   <meta
     name="keywords"
-    content="Companian Commerce, eCommerce agency, Amazon agency, Shopify experts, eBay services, TikTok Shop management, FBA service, PPC advertising, catalog optimization, product listing optimization"
+    content="Companian Commerce Agency, Amazon FBA services, Shopify experts, eBay marketplace management, TikTok Shop marketing, product listing optimization, PPC campaigns, catalog optimization, eCommerce growth, multi-platform eCommerce agency"
   />
 
   {/* ✅ Contact Info */}
   <meta name="contact:email" content="info@companiancommerce.com" />
   <meta name="contact:phone_number" content="+923155513063" />
 
-  {/* ⭐⭐⭐ COMPLETE ORGANIZATION SCHEMA (with new logo) ⭐⭐⭐ */}
+  {/* ⭐⭐⭐ COMPLETE ORGANIZATION SCHEMA (with updated logo) ⭐⭐⭐ */}
   <script type="application/ld+json">
     {`
     {
@@ -157,7 +157,7 @@ const Home = () => {
     `}
   </script>
 
-  {/* ⭐⭐⭐ WEBSITE SCHEMA ⭐⭐⭐ */}
+  {/* ⭐⭐⭐ WEBSITE SCHEMA */}
   <script type="application/ld+json">
     {`
     {
@@ -174,6 +174,7 @@ const Home = () => {
     `}
   </script>
 </Helmet>
+
 
 
 

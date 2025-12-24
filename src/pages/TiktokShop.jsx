@@ -20,7 +20,7 @@ const tiktokServices = [
   {
     id: 'tiktok-1',
     title: 'Product Listing',
-    text: 'We create attractive and optimized product listings for TikTok Shop using scroll-stopping visuals, persuasive copy, and strong calls-to-action. Each listing is designed to align with TikTok’s mobile-first experience and tailored to engage your ideal customers, resulting in more clicks and higher conversion rates.',
+    text: 'Attractive TikTok Shop product listings with scroll stopping visuals, persuasive copy, and mobile-friendly layouts. Optimized for clicks, conversions, and TikTok mobile-first experience win more sales with click-worthy designs',
     image: 'image1.jpg',
     icon: <FaListAlt />,
     benefits: ['Attractive Layouts', 'Mobile Friendly', 'Click-Worthy'],
@@ -29,7 +29,7 @@ const tiktokServices = [
   {
     id: 'tiktok-2',
     title: 'SEO Optimization',
-    text: 'We apply powerful TikTok Shop SEO techniques including keyword-rich titles, backend tags, smart categorization, and optimized descriptions. This ensures your products not only rank better on TikTok Shop but also appear in external search engines like Google, boosting your visibility and driving organic traffic.',
+    text: 'Boost TikTok Shop visibility with keyword-rich titles, backend tags, smart categorization, and SEO techniques. Rank higher in shop search and Google for organic traffic and better discoverability',
     image: 'image2.jpg',
     icon: <FaSearch />,
     benefits: ['Keyword Rich', 'Better Visibility', 'Shop Search Boost'],
@@ -38,7 +38,7 @@ const tiktokServices = [
   {
     id: 'tiktok-3',
     title: 'TikTok Ads',
-    text: 'We design and manage TikTok ad campaigns focused on conversions. From eye-catching creatives and precise audience targeting to bidding strategies and performance tracking, our ad services ensure your budget is spent efficiently to generate real business results.',
+    text: 'ROI focused TikTok ads with precise targeting, eye-catching creatives, bidding strategies, and performance tracking. Drive high engagement and conversions efficiently for real business results',
     image: 'image3.jpg',
     icon: <FaBullseye />,
     benefits: ['Precise Targeting', 'High Engagement', 'ROI Focused'],
@@ -47,7 +47,7 @@ const tiktokServices = [
   {
     id: 'tiktok-4',
     title: 'TikTok Campaigns',
-    text: 'We craft seasonal, trend-driven, or product launch campaigns aligned with TikTok’s ever-changing trends. These campaigns are designed to go viral by tapping into current sounds, challenges, and user behavior patterns, increasing your store’s visibility and sales potential.',
+    text: 'Trend driven TikTok Shop campaigns using current sounds, challenges, and seasonal launches. Go viral, expand reach, and increase sales with creative concepts tailored to TikTok user behavior',
     image: 'image4.jpg',
     icon: <FaFireAlt />,
     benefits: ['Trend-Driven', 'Creative Concepts', 'Customer Reach'],
@@ -56,7 +56,7 @@ const tiktokServices = [
   {
     id: 'tiktok-5',
     title: 'Spark Ads',
-    text: 'Spark Ads let you boost your existing TikTok content, whether it’s organic brand content or influencer videos. We help you identify high-performing posts and turn them into targeted ads that preserve the authenticity of UGC while delivering paid reach and engagement.',
+    text: 'Boost UGC and organic TikTok content into high-trust Spark Ads. Identify top-performing posts for authentic paid reach, better engagement, and superior ROI while preserving influencer authenticity',
     image: 'image5.jpg',
     icon: <FaStar />,
     benefits: ['Boost UGC', 'More Trust', 'Better ROI'],
@@ -65,7 +65,7 @@ const tiktokServices = [
   {
     id: 'tiktok-6',
     title: 'Influencer Marketing',
-    text: 'We connect you with niche-relevant TikTok influencers who can authentically promote your products to a loyal following. From campaign planning to execution, we manage the entire process to build trust, generate buzz, and drive conversions through influencer collaborations.',
+    text: 'Niche TikTok influencers for trusted promotions. Full campaign planning, execution, and collaborations to build loyalty, generate buzz, and drive conversions seamlessly',
     image: 'image6.jpg',
     icon: <FaUserFriends />,
     benefits: ['Influencer Reach', 'Trust Building', 'Audience Expansion'],
@@ -74,7 +74,7 @@ const tiktokServices = [
   {
     id: 'tiktok-7',
     title: 'Real-time Order Sync',
-    text: 'Stay on top of your TikTok Shop operations with real-time order syncing. Our integration ensures inventory is up to date, orders are tracked accurately, and fulfillment is smooth — reducing manual errors and improving customer satisfaction.',
+    text: 'Hassle-free real-time order sync for TikTok Shop with Shopify integration. Accurate inventory mapping, no errors, fast fulfillment streamline operations and boost customer satisfaction',
     image: 'image7.jpg',
     icon: <FaSync />,
     benefits: ['Live Sync', 'No Errors', 'Fast Fulfillment'],
@@ -83,7 +83,7 @@ const tiktokServices = [
   {
     id: 'tiktok-8',
     title: 'Performance Reporting',
-    text: 'Get clear, actionable insights into your TikTok Shop’s performance with our detailed reporting tools. From ad effectiveness and conversion metrics to audience engagement and product performance, we help you make informed decisions and grow with confidence.',
+    text: 'Data-driven TikTok Shop insights on ads, conversions, engagement, and ROI. Clear reporting and analysis for smarter decisions, continuous optimization, and confident growth',
     image: 'image8.jpg',
     icon: <FaChartBar />,
     benefits: ['Smart Insights', 'Campaign Analysis', 'Better Decisions'],

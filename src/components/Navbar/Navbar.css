@@ -152,7 +152,7 @@
 .contact-link {
   position: absolute;
   right: 40px;
-  top: 50%;
+  top: 49%;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
@@ -160,7 +160,7 @@
 }
 
 .contact-link a {
-  padding: 12px 20px;
+  padding: 7px 20px; /* 12px se 5px kam kar dia top padding ke liye */
   background-color: #d4af37;
   color: white;
   font-weight: 600;
@@ -171,6 +171,7 @@
   height: 40px;
   transition: all 0.3s ease, transform 0.3s ease;
 }
+
 .contact-link a:hover {
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 6px 12px rgba(224, 127, 0, 0.3);

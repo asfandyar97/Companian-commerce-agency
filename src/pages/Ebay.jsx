@@ -19,7 +19,7 @@ const ebayServices = [
   {
     id: 'ebay-1',
     title: 'Product Listing & SEO',
-    text: 'We create optimized listings with effective titles, descriptions, and backend keywords to improve visibility and conversions on eBay. Listings are crafted to align with buyer search behavior, ensuring discoverability and conversions. Our team conducts keyword research tailored for eBay’s unique algorithm and buyer intent. From detailed item specifics to persuasive copywriting and mobile-friendly formatting, we ensure each listing stands out and drives higher engagement across all devices.',
+    text: 'We create SEO‑friendly eBay listings with clear titles, compelling descriptions, and optimized backend keywords to boost search visibility and clicks. Listings are aligned with real buyer search behavior so your products appear in front of the right audience and generate more sales. Our team focuses on high‑traffic, low‑competition long‑tail keywords and mobile‑friendly copy to help your listings stand out, rank higher, and convert better',
     image: 'image1.jpg',
     icon: <FaListUl />,
     benefits: ['High Visibility', 'Improved Rankings', 'SEO Friendly'],
@@ -28,7 +28,7 @@ const ebayServices = [
   {
     id: 'ebay-2',
     title: 'eBay Store Design & Branding',
-    text: 'Design a professional, branded storefront that builds trust and encourages repeat customers. Visual appeal and branding consistency help attract and retain buyers. We create custom store banners, category layouts, and a cohesive brand identity that sets you apart from competitors. A well-designed store enhances buyer confidence, improves navigation, and increases the likelihood of repeat purchases making your eBay store a true brand destination.',
+    text: 'We design professional, branded eBay storefronts that build trust and make your business look established. Custom banners, clean layouts, and consistent branding help buyers recognize your store and feel confident to purchase. A well‑structured store makes it easier for shoppers to find products, stay longer, and come back again, turning casual visitors into repeat customers',
     image: 'image2.jpg',
     icon: <FaPaintBrush />,
     benefits: ['Branded Design', 'Professional Look', 'Repeat Buyers'],
@@ -37,7 +37,7 @@ const ebayServices = [
   {
     id: 'ebay-3',
     title: 'Keyword Targeting & Research',
-    text: 'Conduct targeted keyword research for your products to help them rank higher in eBay search results, increasing visibility and sales potential. We analyze top-performing keywords based on eBay’s unique algorithm, competitor insights, and real buyer behavior. Our approach ensures that your listings are matched with the most relevant and high-traffic terms leading to stronger search performance and more qualified traffic.',
+    text: 'We perform in‑depth eBay keyword research to find the exact terms your buyers are searching for. By targeting high‑traffic, low‑competition keywords, we help your listings rank higher and attract more qualified visitors. Every keyword strategy is tailored to your niche and eBay’s algorithm, so your products stay visible, relevant, and ready to convert',
     image: 'image3.jpg',
     icon: <FaSearch />,
     benefits: ['Relevant Keywords', 'Better Visibility', 'Targeted Search'],
@@ -46,7 +46,7 @@ const ebayServices = [
   {
     id: 'ebay-4',
     title: 'Competitor Analysis & Strategy',
-    text: 'We evaluate your competitors and craft strategies to out-rank and out-sell them effectively. Stay ahead with smart pricing, positioning, and promotions. Our team conducts in-depth analysis of competing listings, pricing patterns, shipping options, and buyer feedback trends. Based on this data, we implement actionable strategies that give you a competitive edge helping your products stand out and dominate high-converting categories.',
+    text: 'We analyze competing eBay listings, pricing, and offers to see exactly how your rivals sell. Using these insights, we refine your pricing, offers, and positioning so your products stand out and win more clicks and sales in your category',
     image: 'image4.jpg',
     icon: <FaUsers />,
     benefits: ['Market Advantage', 'Price Strategy', 'Competitive Edge'],
@@ -55,7 +55,7 @@ const ebayServices = [
   {
     id: 'ebay-5',
     title: 'Campaign Manager & Promotions',
-    text: 'Manage eBay promotional tools and campaigns to boost traffic and increase sales. We use eBay’s internal tools to drive visibility and conversion. From creating time-limited offers and coupons to managing markdown sales and promoted listings, we implement targeted campaigns that attract more buyers. Our promotion strategies are tailored to your product goals, ensuring maximum ROI and sustainable growth.',
+    text: 'We set up and manage eBay promotions like coupons, markdown sales, and promoted listings to drive more traffic to your products. Every campaign is optimized for your goals so you get better visibility, higher click‑through rates, and more conversions',
     image: 'image5.jpg',
     icon: <FaBullhorn />,
     benefits: ['Sales Boost', 'Traffic Growth', 'Targeted Offers'],
@@ -64,7 +64,7 @@ const ebayServices = [
   {
     id: 'ebay-6',
     title: 'Order & Inventory Management',
-    text: 'Streamline operations with systems that manage stock levels and order fulfillment efficiently, reducing delays and improving buyer experience. We implement tools and processes that ensure accurate inventory tracking, prevent overselling, and enable timely order dispatch. By keeping your listings in sync with real-time stock levels, we help you maintain seller performance metrics and avoid costly out-of-stock situations.',
+    text: 'We help you keep inventory and orders in sync so you avoid overselling and stockouts. With accurate stock tracking and smooth order handling, your buyers get their products on time and your seller performance stays strong',
     image: 'image6.jpg',
     icon: <FaBoxes />,
     benefits: ['Stock Accuracy', 'Efficient Orders', 'No Overselling'],
@@ -73,7 +73,7 @@ const ebayServices = [
   {
     id: 'ebay-7',
     title: 'Ads Setup & Performance Reporting',
-    text: 'Set up and optimize eBay advertising campaigns with detailed performance reports and analytics for continuous improvement and ROI. We manage your promoted listings with data-backed targeting, bid optimization, and keyword refinement. Regular performance tracking and reporting ensures your campaigns are constantly improving, delivering better reach, higher click-through rates, and stronger returns on ad spend.',
+    text: 'We create and optimize eBay ad campaigns that put your products in front of the right shoppers. Regular reports show what’s working so we can adjust bids, keywords, and budgets to improve ROI over time',
     image: 'image7.jpg',
     icon: <FaAd />,
     benefits: ['Ad Insights', 'Better ROI', 'Campaign Scaling'],
@@ -82,7 +82,7 @@ const ebayServices = [
   {
     id: 'ebay-8',
     title: 'Store & Listing Analytics',
-    text: 'Track and analyze your store and listing performance to make data-driven improvements. We help you understand what’s working and what needs refinement. Using eBay’s performance dashboards and third-party tools, we monitor key metrics such as impressions, click-through rates, sales conversions, and buyer behavior. Our insights allow you to fine-tune listings, optimize store layout, and continuously grow your eBay business based on real-time performance data.',
+    text: 'We track key metrics like impressions, clicks, and conversions to understand how your eBay store is performing. Using this data, we make smart changes to listings and store layout to keep improving sales and long‑term growth',
     image: 'image8.jpg',
     icon: <FaChartBar />,
     benefits: ['Data Insights', 'Performance Tracking', 'Growth Focus'],

@@ -7,6 +7,7 @@ export default defineConfig({
     fs: {
       strict: false,
     },
+    open: 'chrome' // yahan Chrome me open hoga
   },
   base: './',
   publicDir: 'public',

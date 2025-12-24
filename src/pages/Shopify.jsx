@@ -21,7 +21,7 @@ const shopifyServices = [
   {
     id: "shopify-1",
     title: "Shopify Store Setup & Customization",
-    text: "We set up your Shopify store from scratch including theme selection, essential pages, navigation menus, and store settings tailored specifically to your brand.",
+    text: "CompanianCommerce sets up your Shopify store from scratch custom layouts, responsive themes, migration from WooCommerce/Magento. Theme selection, essential pages, navigation menus, store settings tailored to your brand. Fast launch with SEO foundation, dropshipping ready, mobile-optimized for seamless ecommerce success",
     image: "image1.jpg",
     icon: <FaStore />,
     benefits: ["Custom Layouts", "Complete Setup", "Responsive Design"],
@@ -30,7 +30,7 @@ const shopifyServices = [
   {
     id: "shopify-2",
     title: "Product Listing & SEO",
-    text: "Get your products listed with professionally written titles, descriptions, and SEO-optimized metadata for higher search visibility.",
+    text: "We delivers SEO-optimized product listings with high-volume keywords. Professional titles, descriptions, metadata boost Google ranking & discoverability. Keyword strategy ensures top positions, higher traffic, better conversions for your store. Rank higher than competitors effortlessly with proven optimization techniques",
     image: "image2.jpg",
     icon: <FaTags />,
     benefits: ["SEO Optimized", "High Discoverability", "Keyword Strategy"],
@@ -39,7 +39,7 @@ const shopifyServices = [
   {
     id: "shopify-3",
     title: "Theme Design & Branding",
-    text: "We customize your store theme to reflect your brand identity and create a professional, trust-building shopping experience.",
+    text: "Custom Shopify theme design reflects your brand identity  elegant UI/UX, mobile-responsive, consistent branding for professional experience. CompanianCommerce creates compelling visuals, easy navigation that reduce bounce rates. Stand out from competition with brand-centric themes that build trust",
     image: "image3.jpg",
     icon: <FaPalette />,
     benefits: ["Brand Identity", "Elegant Design", "Consistent UI"],
@@ -48,7 +48,7 @@ const shopifyServices = [
   {
     id: "shopify-4",
     title: "Payment & Shipping Integration",
-    text: "We integrate secure payment gateways and configure shipping zones, rates, rules, and tracking for a smooth checkout flow.",
+    text: "We offers Seamless PayPal & bank transfer integration  fast checkout, secure transactions. Configure shipping zones, rates, rules, tracking for smooth delivery. Multiple payment options ensure customer satisfaction, higher conversions, uninterrupted ecommerce flow every time you process orders",
     image: "image4.jpg",
     icon: <FaShippingFast />,
     benefits: ["Fast Checkout", "Multiple Gateways", "Shipping Zones"],
@@ -57,7 +57,7 @@ const shopifyServices = [
   {
     id: "shopify-5",
     title: "Shopify Apps Configuration",
-    text: "We install and configure apps for reviews, upsells, chat, and more to improve functionality and conversion rates.",
+    text: "Smart apps configuration boosts functionality  reviews, upsells, chat, dropshipping tools, 3rd-party integrations. Enhance sales with review apps, abandoned cart recovery, email marketing. Essential apps improve conversion rates, customer experience, store performance dramatically",
     image: "image5.jpg",
     icon: <FaCogs />,
     benefits: ["Enhanced Features", "Sales Tools", "3rd-Party Integrations"],
@@ -66,7 +66,7 @@ const shopifyServices = [
   {
     id: "shopify-6",
     title: "Marketing & Automation",
-    text: "We set up automated email flows, cart recovery, and lead-generation tools to maximize customer retention.",
+    text: "Automated growth tools  email campaigns, cart recovery, lead generation for maximum retention. Set up flows for welcome series, abandoned carts, post-purchase upsells. Personalized marketing recovers lost sales, builds customer loyalty, drives repeat business profitably",
     image: "image6.jpg",
     icon: <FaBullhorn />,
     benefits: ["Email Campaigns", "Lead Generation", "Cart Recovery"],
@@ -75,7 +75,7 @@ const shopifyServices = [
   {
     id: "shopify-7",
     title: "Shopify Analytics & Reporting",
-    text: "Track sales, traffic, and user behavior to make smart data-driven decisions using detailed analytics dashboards.",
+    text: "Complete data insights  traffic tracking, sales analytics, behavior analysis dashboards for smart decisions. Monitor customer journey, conversion funnels, top products. Optimize store performance, identify growth opportunities, scale business profitably with real-time insights",
     image: "image7.jpg",
     icon: <FaChartLine />,
     benefits: ["Traffic Tracking", "Sales Insights", "Behavior Analysis"],
@@ -84,7 +84,7 @@ const shopifyServices = [
   {
     id: "shopify-8",
     title: "Store Maintenance & Support",
-    text: "We provide ongoing maintenance, theme updates, bug fixes, and performance optimizations.",
+    text: "24/7 maintenance & support  bug fixes, theme updates, performance optimization, regular security checks. Ensure 99.9% uptime, handle peak traffic, fix issues instantly. Ongoing support keeps your Shopify investment secure, performing at peak efficiency always.",
     image: "image8.jpg",
     icon: <FaTools />,
     benefits: ["24/7 Support", "Bug Fixing", "Store Uptime"],
